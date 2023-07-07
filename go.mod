@@ -1,4 +1,4 @@
-module github.com/alainwolf/alainwolf
+module github.com/alainwolf/alainwolf.ch
 
 go 1.18
 
