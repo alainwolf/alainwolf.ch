@@ -1,0 +1,151 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+# When using Hugo Modules this config value should be removed.
+#theme = "congo"
+
+baseURL = "https://alainwolf.ch/"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+paginate = 10
+summaryLength = 0
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[languages]
+
+[languages.de]
+#header.logo = "img/author.png"
+languageCode = "de"
+languageName = "Deutsch"
+title = "Alain Wolf"
+weight = 2
+copyright = "© 2023 Alain Wolf - Alle Rechte vorbehalten"
+
+[languages.de.params]
+dateFormat = "2. January 2006"
+description = "Persönliche Website von Alain Wolf, Zürich, Schweiz"
+displayName = " 🇩🇪 "
+isoCode = "de"
+rtl = false
+
+[languages.de.author]
+bio = "Ein bisschen über mich"
+headline = "Don't panic!"
+image = "img/author.png"
+name = "Alain Wolf"
+links = [
+  { email = "mailto:alain@alainwolf.ch" },
+  { signal-messenger = "https://signal.me/#p/+41788978776" },
+  #   { link = "https://link-to-some-website.com/" },
+  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
+  #   { apple = "https://www.apple.com" },
+  #   { blogger = "https://username.blogspot.com/" },
+  #   { codepen = "https://codepen.io/username" },
+  #   { dev = "https://dev.to/username" },
+  #   { discord = "https://discord.gg/invitecode" },
+  #   { dribbble = "https://dribbble.com/username" },
+  #   { facebook = "https://facebook.com/username" },
+  #   { flickr = "https://www.flickr.com/photos/username/" },
+  #   { foursquare = "https://foursquare.com/username" },
+  { github = "https://github.com/alainwolf" },
+  #   { gitlab = "https://gitlab.com/username" },
+  #   { google = "https://www.google.com/" },
+  #   { hashnode = "https://username.hashnode.dev" },
+  #   { instagram = "https://instagram.com/username" },
+  { keybase = "https://keybase.io/alainwolf" },
+  #   { kickstarter = "https://www.kickstarter.com/profile/username" },
+  #   { lastfm = "https://lastfm.com/user/username" },
+  #   { linkedin = "https://linkedin.com/in/username" },
+  #   { mastodon = "https://mastodon.instance/@username" },
+  #   { medium = "https://medium.com/username" },
+  #   { microsoft = "https://www.microsoft.com/" },
+  #   { orcid = "https://orcid.org/userid" },
+  #   { patreon = "https://www.patreon.com/username" },
+  #   { pinterest = "https://pinterest.com/username" },
+  #   { reddit = "https://reddit.com/user/username" },
+  #   { researchgate = "https://www.researchgate.net/profile/username" },
+  #   { slack = "https://workspace.url/team/userid" },
+  #   { snapchat = "https://snapchat.com/add/username" },
+  { soundcloud = "https://soundcloud.com/alainwolf" },
+  { stack-overflow = "https://stackoverflow.com/users/4719048/alain-wolf" },
+  #   { steam = "https://steamcommunity.com/profiles/userid" },
+  #   { telegram = "https://t.me/username" },
+  #   { tiktok = "https://tiktok.com/@username" },
+  #   { tumblr = "https://username.tumblr.com" },
+  #   { twitch = "https://twitch.tv/username" },
+  #   { twitter = "https://twitter.com/username" },
+  #   { whatsapp = "https://wa.me/phone-number" },
+  #   { youtube = "https://youtube.com/username" },
+  { openbroadcast = "https://www.openbroadcast.org/network/users/b8cfebd6-2cfa-4d46-a34f-d16a524147b9/profile/" },
+]
+
+[languages.en]
+#header.logo = "img/author.png"
+copyright = "© 2023 Alain Wolf - All rights reserved"
+languageCode = "en"
+languageName = "English"
+title = "Alain Wolf"
+weight = 1
+
+[languages.en.params]
+dateFormat = "January 2, 2006"
+description = "Personal Website vof Alain Wolf, Zurich, Switzerland"
+displayName = " 🇬🇧 "
+isoCode = "en"
+rtl = false
+
+[languages.en.author]
+name = "Alain Wolf"
+image = "img/author.png"
+headline = "Don't panic!"
+bio = "A little bit about me"
+links = [
+  { email = "mailto:alain@alainwolf.ch" },
+  { signal-messenger = "https://signal.me/#p/+41788978776" },
+  #   { link = "https://link-to-some-website.com/" },
+  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
+  #   { apple = "https://www.apple.com" },
+  #   { blogger = "https://username.blogspot.com/" },
+  #   { codepen = "https://codepen.io/username" },
+  #   { dev = "https://dev.to/username" },
+  #   { discord = "https://discord.gg/invitecode" },
+  #   { dribbble = "https://dribbble.com/username" },
+  #   { facebook = "https://facebook.com/username" },
+  #   { flickr = "https://www.flickr.com/photos/username/" },
+  #   { foursquare = "https://foursquare.com/username" },
+  { github = "https://github.com/alainwolf" },
+  #   { gitlab = "https://gitlab.com/username" },
+  #   { google = "https://www.google.com/" },
+  #   { hashnode = "https://username.hashnode.dev" },
+  #   { instagram = "https://instagram.com/username" },
+  { keybase = "https://keybase.io/alainwolf" },
+  #   { kickstarter = "https://www.kickstarter.com/profile/username" },
+  #   { lastfm = "https://lastfm.com/user/username" },
+  #   { linkedin = "https://linkedin.com/in/username" },
+  #   { mastodon = "https://mastodon.instance/@username" },
+  #   { medium = "https://medium.com/username" },
+  #   { microsoft = "https://www.microsoft.com/" },
+  #   { orcid = "https://orcid.org/userid" },
+  #   { patreon = "https://www.patreon.com/username" },
+  #   { pinterest = "https://pinterest.com/username" },
+  #   { reddit = "https://reddit.com/user/username" },
+  #   { researchgate = "https://www.researchgate.net/profile/username" },
+  #   { slack = "https://workspace.url/team/userid" },
+  #   { snapchat = "https://snapchat.com/add/username" },
+  { soundcloud = "https://soundcloud.com/alainwolf" },
+  { stack-overflow = "https://stackoverflow.com/users/4719048/alain-wolf" },
+  #   { steam = "https://steamcommunity.com/profiles/userid" },
+  #   { telegram = "https://t.me/username" },
+  #   { tiktok = "https://tiktok.com/@username" },
+  #   { tumblr = "https://username.tumblr.com" },
+  #   { twitch = "https://twitch.tv/username" },
+  #   { twitter = "https://twitter.com/username" },
+  #   { whatsapp = "https://wa.me/phone-number" },
+  #   { youtube = "https://youtube.com/username" },
+  { openbroadcast = "https://www.openbroadcast.org/network/users/b8cfebd6-2cfa-4d46-a34f-d16a524147b9/profile/" },
+]

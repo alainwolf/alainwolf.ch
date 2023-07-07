@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Hostname of the server hosting the website
+_HOST=lapidus.urown.net
+
+# Username on the server hosting the website
+_USER=wolf
+
+# Directory on the server for your web site files
+_DIR=/var/www/alainwolf.ch/
+
+set -e -u
+
+# Build
+hugo
+
+# Publish
+# Note:
+#   Everything on the server that's not in the local public folder will be
+#   deleted!
+rsync -avz --delete public/ ${_USER}@${_HOST}:${_DIR}
+
+exit 0

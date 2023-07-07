@@ -1,0 +1,124 @@
+/* Solarized scheme */
+:root {
+
+  /* Light Background */
+  /* Dark Button Hover Foreground*/
+  /* Dark Alert-Box Title */
+  /* Dark Icon Foreground */
+  /* Dark Title Foreground */
+    --color-neutral:
+      253, 246, 227;   /* base3 */
+
+    /* Light Code-Box Background */
+    --color-neutral-50:
+      238, 232, 213; /* base2 */
+
+    /* Light Search List Background */
+    --color-neutral-100:
+      238, 232, 213; /* base2 */
+
+    /* Dark Code-Box Foreground */
+    --color-neutral-200:
+      147, 161, 161; /* base1 */
+
+    /* Dark Foreground */
+    --color-neutral-300:
+      131, 148, 150; /* base0 */
+
+    /* Dark Primary Foreground */
+    --color-neutral-400:
+      131, 148, 150; /* base0 */
+
+    /* Dark Emphasized Foreground */
+    --color-neutral-500:
+      147, 161, 161; /* base1 */
+
+    --color-neutral-600:
+      0, 43, 54; /* base03 */
+
+    /* Light Code-Box Foreground */
+    /* Dark Code-Box Background? */
+    --color-neutral-700:
+      7, 54, 66; /* base02 */
+
+    /* Dark Background */
+    --color-neutral-800:
+      0, 43, 54; /* base03 */
+
+    /* Light Emphasized Foreground */
+    --color-neutral-900:
+      88, 110, 117; /* base01 */
+
+    /* ? */
+    --color-primary-50:
+      38, 139, 210; /* blue */
+
+    /* Light Alert Box Background */
+    --color-primary-100:
+      238, 232, 213; /* base2 */
+
+    /* ? */
+    --color-primary-200:
+      203, 75, 22; /* orange*/
+
+    /* ? */
+    --color-primary-300:
+      203, 75, 22; /* orange*/
+
+    /* Dark Link Hover Color */
+    --color-primary-400:
+      220, 50, 47; /* red */
+
+    /* Light Menu Hover Underline */
+    --color-primary-500:
+      88, 110, 117; /* base01 */
+
+    /* Light Button Background */
+    --color-primary-600:
+      101, 123, 131; /* base00 */
+
+    /* Light Link Hover Background */
+    /* Light Link Foreground */
+    /* Dark Button Hover Background */
+    --color-primary-700:
+      253, 246, 227; /* base3 */
+
+    /* Dark Button Background */
+    --color-primary-800:
+      238, 232, 213;   /* base2 */
+
+    /* Dark List Hover Color */
+    --color-primary-900:
+      7, 54, 66; /* base02 */
+
+    /* Gray */
+    --color-secondary-50:
+      249, 250, 251;
+
+    --color-secondary-100:
+      243, 244, 246;
+
+    --color-secondary-200:
+      229, 231, 235;
+
+    --color-secondary-300:
+    209, 213, 219;
+
+    --color-secondary-400:
+      156, 163, 175;
+
+    --color-secondary-500:
+      107, 114, 128;
+
+    --color-secondary-600:
+      75, 85, 99;
+
+    --color-secondary-700:
+      55, 65, 81;
+
+    --color-secondary-800:
+      31, 41, 55;
+
+    --color-secondary-900:
+      17, 24, 39;
+  }
