@@ -8,20 +8,20 @@ Built with the [Hugo static site generator](https://gohugo.io/), using the
 ## Setup
 
 ```bash
-    # Install Hugo
-    sudo snap install hugo
+# Install Hugo
+sudo snap install hugo
 
-    # Clone this repository
-    git clone git@github.com:alainwolf/alainwolf.ch.git
-    cd alainwolf.ch
+# Clone this repository
+git clone git@github.com:alainwolf/alainwolf.ch.git
+cd alainwolf.ch
 
-    # Update the Congo theme module
-    hugo mod get -u
+# Update the Congo theme module
+hugo mod get -u
 ```
 
 ## Publish
 
 ```bash
-    cd alainwolf.ch
-    ./deploy
+cd alainwolf.ch
+./deploy
 ```
