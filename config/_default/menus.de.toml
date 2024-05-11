@@ -31,6 +31,26 @@
   pageRef = "contact"
   weight = 40
 
+[[main]]
+  name = "Schlüssel"
+  #pageRef = "about"
+  pageRef = "public_keys"
+  weight = 50
+
+[[main]]
+  identifier = "search"
+  weight = 60
+  [main.params]
+    action = "search"
+    icon = "search"
+
+[[main]]
+  identifier = "locale"
+  weight = 70
+  [main.params]
+    action = "locale"
+    icon = "locale"
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.

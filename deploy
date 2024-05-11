@@ -12,7 +12,7 @@ _DIR=/var/www/alainwolf.ch/
 set -e -u
 
 # Build
-hugo
+hugo --minify --gc
 
 # Publish
 # Note:

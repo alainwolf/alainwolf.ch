@@ -1,7 +1,7 @@
 ---
 title: "Contact"
-date: 2023-01-15
-lastmod: 2023-07-07
+date: 2024-01-15
+lastmod: 2024-05-11
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -9,8 +9,11 @@ showDateUpdated: true
 ---
 * Home:   [+41 32 510 47 30](tel:+41325104730)
 * Mobile: [+41 78 897 87 76](tel:+41788978776)
-* Mail: [alain@alainwolf.ch](mailto;alain@alainwolf.ch)
-* [Signal - Private Messenger](https://signal.me/#p/+41788978776)
+* Email: [alain@alainwolf.ch](mailto:alain@alainwolf.ch)
+* [Signal - Private Messenger](https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK)
+
+For secure signed and encrypted communication please see my
+[public keys]({{< ref "public_keys.en" >}}).
 
 ## Location
 
@@ -30,17 +33,6 @@ showDateUpdated: true
 1. S-Bahn **S3** or **S8** to *DietLikon*.
 
 1. Bus **765** or **787** to *Brüttisellen Zentrum* or Bus **796** to *Brüttisellen Gemeindehaus*.
-
-## Public Keys
-
-### OpenPGP Fingerprint
-
-    5143 E0D3 C00C 9DB4 55BD FD76 7223 89E4 2736 2DC5
-
-### SSH Public Key
-
-    gpg --locate-keys 0x722389E427362DC5
-    gpg --export-ssh-key 0x722389E427362DC5
 
 ## File Sharing
 
