@@ -1,7 +1,7 @@
 ---
 title: "Kontakt"
 date: 2023-01-15
-lastmod: 2024-05-11
+lastmod: 2024-05-14
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -22,17 +22,24 @@ Zur sicheren signierten und verschlüsselten Kommunikation können meine
     Schweiz
 
 <iframe width="100%" height="500px" frameborder="0" allowfullscreen
-    src="//umap.openstreetmap.fr/de/map/alain-wolf_857467?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=none&captionBar=false">
+    src="https://umap.openstreetmap.fr/de/map/alain-wolf_857467?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=none&captionBar=false">
 </iframe>
 
-[Grässere Karte](//umap.openstreetmap.fr/de/map/alain-wolf_857467)
- | [Google Maps](https://goo.gl/maps/rUhdonpneNdKjQ6f7)
+[Grössere Karte](//umap.openstreetmap.fr/de/map/alain-wolf_857467)
+ | [Google Maps](https://goo.gl/maps/rUhdonpneNdKjQ6f7) | [///aufgeklärt.teppiche.ruhen](https://w3w.co/aufgeklärt.teppiche.ruhen "What3Words Adresse")
 
 ### Öffentliche Verkehrsmittel
 
-1. S-Bahn **S3** oder **S8** bis *DietLikon*.
+1. Mit der Bahn **S3**, **S8** oder **S19** bis **DietLikon**.
+1. Am Banhof DietLikon in Fahrtrichtung Winterthur bis ans Ende des Bahnsteiges gehen und die Fussgängerunterführung zur Bushaltestelle **Bad** nehmen.
+1. Ab **Dietlikon, Bahnhof/Bad**:
 
-1. Bus **765** oder **787** bis *Brüttisellen Zentrum* oder **796** bis *Brüttisellen Gemeindehaus*.
+    * Bus **765** in Richtung **Zürich Flughafen** bis **Zentrum**
+    * Bus **787** in Richtung **Obere Wangenstr.** bis **Zentrum**
+    * Bus **796** in Richtung **Wangen** bis **Gemeindehaus**
+    * oder [16 Minuten zu Fuss (1.1 Km)](https://maps.app.goo.gl/ej8YJZmKV5np16kYA)
+
+1. Ab Bushaltestelle, ca. 400 bis 450 Meter Fussweg, ca. 6 oder 7 Minuten
 
 ## File Sharing
 

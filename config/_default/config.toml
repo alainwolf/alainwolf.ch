@@ -36,7 +36,7 @@ summaryLength = 0
     languageName = 'English'
     languageDirection = 'ltr'
     weight = 1
-    copyright = "© 2023 Alain Wolf - All rights reserved"
+    copyright = "© 2024 Alain Wolf - All rights reserved"
     title = "Alain Wolf"
 
     [languages.en.params]
