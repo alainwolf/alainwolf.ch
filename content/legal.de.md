@@ -1,7 +1,7 @@
 ---
 title: "Rechtliche Hinweise"
 date: 2023-01-16
-lastmod: 2023-01-17
+lastmod: 2024-05-15
 showDate: false
 showDateUpdated: true
 showTableOfContents: true
@@ -47,9 +47,14 @@ sind nicht verantwortlich für Schäden, wie direkte, indirekte, zufällige, vor
 konkret zu bestimmende oder Folgeschäden, die angeblich durch den Besuch dieser
 Website entstanden sind und übernehmen hierfür folglich keine Haftung.
 
+## Haftungsausschluss für Links
+
 Der Herausgeber übernimmt ebenfalls keine Verantwortung und Haftung für die
 Inhalte und die Verfügbarkeit von Website Dritter, die über externe Links dieser
 Website erreichbar sind. Für den Inhalt der verlinkten Seiten sind
 ausschliesslich deren Betreiber verantwortlich. Der Herausgeber distanziert sich
 damit ausdrücklich von allen Inhalten Dritter, die möglicherweise straf- oder
 haftungsrechtlich relevant sind oder gegen die guten Sitten verstossen.
+
+Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene
+Gefahr des jeweiligen Nutzers.

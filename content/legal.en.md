@@ -1,55 +1,52 @@
 ---
 title: "Rechtliche Hinweise"
 date: 2023-01-16
-lastmod: 2023-01-17
+lastmod: 2024-05-15
 showDate: false
 showDateUpdated: true
 showTableOfContents: true
 showPagination: false
 ---
 
-## Widerspruch von Werbe-Mails
+## Objection to advertising emails
 
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten
-zur Übersendung von nicht ausdrücklich angeforderter Werbung und
-Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten
-behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten
-Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
+The use of contact details published as part of the legal notice requirement to
+send unsolicited advertising and Information materials is hereby objected to.
 
-## Urheberrechte
+As authors and operators of this website, we expressly reserve the right to take
+legal action against any sender of unsolicited advertising, such as spam emails.
 
-Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen
-Dateien auf der Website, gehören ausschliesslich dem Betreiber dieser Website
-oder den speziell genannten Rechteinhabern. Für die Reproduktion von sämtlichen
-Dateien, ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus
-einzuholen.
+## Copyrights
 
-Wer ohne Einwilligung des jeweiligen Rechteinhabers eine Urheberrechtsverletzung
-begeht, kann sich strafbar und allenfalls schadenersatzpflichtig machen.
+Copyright and all other rights to content, images, photos or other Files on the
+website belong exclusively to the operator of this website or the specifically
+named rights holders. Any use or reproduction requires written consent of the
+copyright holder.
 
-## Allgemeiner Haftungsausschluss
+## General disclaimer
 
-Alle Angaben unseres Internetangebotes wurden sorgfältig geprüft. Wir bemühen
-uns, unser Informationsangebot aktuell, inhaltlich richtig und vollständig
-anzubieten. Trotzdem kann das Auftreten von Fehlern nicht völlig ausgeschlossen
-werden, womit wir keine Garantie für Vollständigkeit, Richtigkeit und Aktualität
-von Informationen auch journalistisch-redaktioneller Art übernehmen können.
-Haftungsansprüche aus Schäden materieller oder ideeller Art, die durch die
-Nutzung der angebotenen Informationen verursacht wurden, sind ausgeschlossen,
-sofern kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden
-vorliegt.
+All information on this website has been carefully checked. We strife to keep
+the offered information offering up-to-date, complete and factually correct.
+Nevertheless, errors cannot be completely ruled out, which means we cannot
+guarantee that any information is correct, complete or up-to-date in any
+journalistic-editorial nature.
 
-Der Herausgeber kann nach eigenem Ermessen und ohne Ankündigung Texte verändern
-oder löschen und ist nicht verpflichtet, Inhalte dieser Website zu
-aktualisieren. Die Benutzung bzw. der Zugang zu dieser Website geschieht auf
-eigene Gefahr des Besuchers. Der Herausgeber, seine Auftraggeber oder Partner
-sind nicht verantwortlich für Schäden, wie direkte, indirekte, zufällige, vorab
-konkret zu bestimmende oder Folgeschäden, die angeblich durch den Besuch dieser
-Website entstanden sind und übernehmen hierfür folglich keine Haftung.
+Liability claims arising from material or immaterial damage caused by the use of
+the information provided is excluded, unless evidence of intentional or grossly
+negligent fault is present.
 
-Der Herausgeber übernimmt ebenfalls keine Verantwortung und Haftung für die
-Inhalte und die Verfügbarkeit von Website Dritter, die über externe Links dieser
-Website erreichbar sind. Für den Inhalt der verlinkten Seiten sind
-ausschliesslich deren Betreiber verantwortlich. Der Herausgeber distanziert sich
-damit ausdrücklich von allen Inhalten Dritter, die möglicherweise straf- oder
-haftungsrechtlich relevant sind oder gegen die guten Sitten verstossen.
+The publisher may change or delete texts at its own discretion and without
+notice and is not obliged to update the content of this website. Use of or
+access to this website is at the visitor's own risk. The publisher, its clients
+or partners are not responsible for damages, such as direct, indirect,
+accidental, predetermined or consequential damages, which are allegedly caused
+by visiting this website and therefore assume no liability for them.
+
+## Link disclaimer
+
+The publisher also assumes no responsibility or liability for the content and
+availability of third-party websites that can be reached via external links on
+this website. Only the operators of the linked pages are the solely responsibles
+for the content of those pages. The publisher thereby expressly distances itself
+from all third-party content that may be relevant to criminal or liability law
+or that violate common decency.

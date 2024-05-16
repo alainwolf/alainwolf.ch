@@ -1,7 +1,7 @@
 ---
 title: "Impressum"
 date: 2023-01-15
-lastmod: 2023-01-17
+lastmod: 2024-05-16
 showDate: false
 showDateUpdated: true
 showTableOfContents: true
@@ -17,31 +17,32 @@ showPagination: false
 
     E-Mail: alain@alainwolf.ch
 
-## Haftungsausschluss
+## Technisches
 
-Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit,
-Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.
+### Generator
 
-Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller
-Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der
-veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch
-technische Störungen entstanden sind, werden ausgeschlossen.
+Diese Website wurde mit [Hugo](https://gohugo.io/) generiert, eine
+Software zur Erzeugung statischer Websites.
 
-Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor,
-Teile der Seiten oder das gesamte Angebot ohne besondere Ankündigung zu
-verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder
-endgültig einzustellen.
+### Design
 
-## Haftungsausschluss für Links
+Das Layout wird von [Congo](https://jpanther.github.io/congo/) erstellt. Congo
+ist eines von [vielen Design-Themes](https://themes.gohugo.io/) für Hugo und
+nutzt [Tailwind CSS](https://tailwindcss.com/) zur Formatierung.
 
-Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres
-Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten
-abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene
-Gefahr des jeweiligen Nutzers.
+### Server
 
-## Urheberrechte
+Software: [Nginx Webserver](https://nginx.org/de/)
 
-Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen
-Dateien auf dieser Website, gehören ausschliesslich Alain Wolf oder den speziell
-genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die
-schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
+OS: [Ubuntu Linux](https://ubuntu.com/server)
+
+Hardware:
+
+- CPU: Intel® 4-Core™ i5-4590T 2.0 GHz 6MB Cache
+- RAM: 16 GB DDR3 1'600 MHz
+- Disk: 500 GB SATA SSD
+- Jahrgang: 2017
+
+### Internet
+
+1 Gbit/s up-/download Dual-Stack IPv4/IPv6 von [Init7](https://www.init7.net/)
