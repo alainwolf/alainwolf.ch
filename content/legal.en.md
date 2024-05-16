@@ -1,5 +1,5 @@
 ---
-title: "Rechtliche Hinweise"
+title: "Legal Notice"
 date: 2023-01-16
 lastmod: 2024-05-15
 showDate: false
