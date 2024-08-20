@@ -19,6 +19,13 @@ showPagination: false
 
 ## Technical
 
+### Source Code
+
+This is a [static website](https://en.wikipedia.org/wiki/Static_web_page)
+written in markdown.
+
+The source is [available on Github](https://github.com/alainwolf/alainwolf.ch).
+
 ### Generator
 
 This website was generated with [Hugo](https://gohugo.io/), a Software for
