@@ -1,5 +1,46 @@
 {
     "cSpell.enableFiletypes": [
         "!markdown"
-    ]
+    ],
+    "frontMatter.framework.id": "hugo",
+    "frontMatter.content.publicFolder": "static",
+    "frontMatter.preview.host": "http://localhost:1313",
+    "frontMatter.content.i18n": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": ".",
+        },
+        {
+          "title": "German",
+          "locale": "de",
+          "path": "de"
+        },
+      ],
+
+    "frontMatter.content.pageFolders": [
+
+        {
+            "title": "content",
+            "path": "[[workspace]]/content",
+            "defaultLocale": "en", // This value needs to map to the locale defined in the i18n setting
+            "filePrefix": "",
+        },
+        {
+            "title": "public_keys",
+            "path": "[[workspace]]/content/public_keys",
+            "defaultLocale": "en", // This value needs to map to the locale defined in the i18n setting
+        },
+        {
+            "title": "support",
+            "path": "[[workspace]]/content/support",
+            "defaultLocale": "en", // This value needs to map to the locale defined in the i18n setting
+        },
+        {
+            "title": "contact",
+            "path": "[[workspace]]/content/contact",
+            "defaultLocale": "en", // This value needs to map to the locale defined in the i18n setting
+        }
+    ],
+    "frontMatter.git.enabled": true
 }
