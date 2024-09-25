@@ -8,8 +8,9 @@
 baseURL = "https://alainwolf.ch/"
 languageCode = "en"
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
-paginate = 10
+pagination.pagerSize = 10
 summaryLength = 0
 
 [outputs]

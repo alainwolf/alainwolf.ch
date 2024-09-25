@@ -1,7 +1,7 @@
 ---
 title: "Support"
 date: 2023-03-18
-lastmod: 2023-07-07
+lastmod: 2024-09-25
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -26,7 +26,7 @@ benötigt.
 Der Vermittlungsdienst muss in den Netzwerk-Einstellungen der
 Anwndung eingestellt werden:
 
-{{< figure src="rustdesk_desktop_id.png" height="212" width="241" alt="RustDesk Desktop ID" >}}
+{{< figure src="rustdesk_network_settings.png" title="RustDesk Network Settings" >}}
 
 #### ID server
 

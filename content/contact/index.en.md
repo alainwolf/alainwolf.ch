@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2024-01-15
-lastmod: 2024-05-14
+lastmod: 2024-09-25
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -12,6 +12,8 @@ showDateUpdated: true
 - Mobile: [+41 78 897 87 76](tel:+41788978776)
 - Email: [alain@alainwolf.ch](mailto:alain@alainwolf.ch)
 - [Signal - Private Messenger](https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK)
+
+[QR-Code](AlainWolf_vCard_en.png)
 
 For secure signed and encrypted communication please see my
 [public keys]({{< ref "public_keys.en" >}}).
