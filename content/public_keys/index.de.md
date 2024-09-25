@@ -71,8 +71,8 @@ $ gpg --export-ssh-key 0x722389E427362DC5 \
 
 ## WireGuard VPN
 
-Für VPN Verbindungen mit [WireGuard](https://www.wireguard.com/), nachfolgend
-der öffentliche Schlüssel meines persönlichen Computers:
+Für VPN Verbindungen mit [WireGuard](https://www.wireguard.com/), kann folgender
+öffentlicher Schlüssel meines persönlichen Computers verwendet werden:
 
 ```text
 VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=

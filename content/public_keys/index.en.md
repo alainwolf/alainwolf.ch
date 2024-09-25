@@ -73,8 +73,8 @@ $ gpg --export-ssh-key 0x722389E427362DC5 \
 
 ## WireGuard VPN
 
-For VPN connections with [WireGuard](https://www.wireguard.com/), below is the
-public of my personal computer:
+For VPN connections with [WireGuard](https://www.wireguard.com/), you can use
+this WireGuard public key of my personal computer:
 
 ```text
 VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=

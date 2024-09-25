@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Hostname of the server hosting the website
-_HOST=lapidus.urown.net
+_HOST=mars.bru.urown.net
 
 # Username on the server hosting the website
 _USER=wolf
@@ -18,6 +18,6 @@ hugo --minify --gc
 # Note:
 #   Everything on the server that's not in the local public folder will be
 #   deleted!
-rsync -avz --delete public/ ${_USER}@${_HOST}:${_DIR}
+rsync -avz --delete public/ "${_USER}@${_HOST}:${_DIR}"
 
 exit 0
