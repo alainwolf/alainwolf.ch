@@ -17,8 +17,8 @@ für Verschlüsselung, digitale Unterschriften und Authentifizierung.
 ## OpenPGP
 
 [OpenPGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) dient der
-Verschlüsselung und digitaler Signierung von E-Mail-Nachrichten, Dateien und
-Quellcodes.
+Verschlüsselung und digitaler Signierung von E-Mail-Nachrichten, Dateien,
+Quellcode und -Änderungen.
 
 Moderne E-Mail-Client-Software, wie
 [Thunderbird](https://www.thunderbird.net/de/), findet den öffentlichen
@@ -32,47 +32,48 @@ gpg --locate-keys alain@alainwolf.ch
 
 Oder über Dein Android Smartphone mit [OpenKeychain](openkeychain).
 
-### Fingerprint
+### Verifizierung
 
 Um zu überprüfen, ob Du auch den richtigen Schlüssel verwendest, kannst Du ihn
 mit den letzen 16 Zeichen des unten angezeigten
 [Fingerprint](https://de.wikipedia.org/wiki/Hashfunktion) vergleichen:
 
 ```bash
-$ gpg --list-keys alain@alainwolf.ch | grep '7223 89E4 2736 2DC5'
-    Key fingerprint = 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
+gpg --list-keys alain@alainwolf.ch | grep '7223 89E4 2736 2DC5'
 ```
 
-Der sicherste Weg wäre, den Fingerprint mit mir direkt bei einem persönlichen
-Treffen zu vergleichen.
+```txt
+Key fingerprint = 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
+```
+
+Der sicherste Weg wäre, den Fingerprint bei einem persönlichen Treffen zu
+vergleichen.
 
 ## SSH Public Key
 
-This allows you to give me access to one of your computer systems via
-[SSH](https://en.wikipedia.org/wiki/Secure_Shell).
-
-Zur Authentifizierung gegenüber SSH Servern benutze ich ebenfalls meinen
+Auch zur Authentifizierung gegenüber
+[SSH](https://en.wikipedia.org/wiki/Secure_Shell) Servern benutze ich meinen
 OpenPGP-Schlüssel.
 
-Du meinen öffentlichen OpenPGP-Schlüssel in Schlüsselbund zu speichern und ihn
-danach, im für SSH Server erforderlichen Format, exportieren:
+Um mir per SSH Zugriff auf Deine Systeme zu gewähren, kannst Du meinen
+OpenPGP Key als SSH Key exportieren.
 
 ```bash
 # Meine Benutzer-ID auf Deinem System (ändere nach Bedarf)
 $ _SSH_USER=wolf
 
-# Mein OpenPGP Key suchen und installieren
+# Meinen OpenPGP Key in Deinen Schlüsselbund aufnehmen
 $ gpg --search-keys 0x722389E427362DC5
 
-# SSH Key exportieren und installieren
+# SSH Key aus dem Schlüsselbund exportieren und installieren
 $ gpg --export-ssh-key 0x722389E427362DC5 \
     | sudo -u $_SSH_USER tee -a /home/${_SSH_USER}/.ssh/authorized_keys
 ```
 
 ## WireGuard VPN
 
-Für VPN Verbindungen mit [WireGuard](https://www.wireguard.com/), kann folgender
-öffentlicher Schlüssel meines persönlichen Computers verwendet werden:
+Für VPN Verbindungen mit [WireGuard](https://www.wireguard.com/), kann der
+folgende öffentliche Wireguard Schlüssel verwendet werden:
 
 ```text
 VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
