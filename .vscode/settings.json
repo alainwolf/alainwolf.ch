@@ -42,5 +42,16 @@
             "defaultLocale": "en", // This value needs to map to the locale defined in the i18n setting
         }
     ],
-    "frontMatter.git.enabled": true
+    "frontMatter.git.enabled": true,
+    "markdown.preview.openMarkdownLinks": "inEditor",
+    "markdown-preview-enhanced.markdownFileExtensions": [
+        ".md",
+        ".markdown",
+        ".mdown",
+        ".mkdn",
+        ".mkd",
+        ".rmd",
+        ".qmd",
+        ".mdx"
+    ]
 }

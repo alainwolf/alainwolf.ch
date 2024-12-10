@@ -1,7 +1,7 @@
 ---
 title: "Öffentliche Schlüssel"
 date: 2023-12-03
-lastmod: 2024-09-25
+lastmod: 2024-12-09
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -16,44 +16,73 @@ für Verschlüsselung, digitale Unterschriften und Authentifizierung.
 
 ## OpenPGP
 
-[OpenPGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) dient der
-Verschlüsselung und digitaler Signierung von E-Mail-Nachrichten, Dateien,
-Quellcode und -Änderungen.
+[OpenPGP](https://de.wikipedia.org/wiki/OpenPGP) kann für Verschlüsselung von
+E-Mail-Nachrichten und Dateien verwendet werden. Ich verwende es für digitale
+Signierung von E-Mail-Nachrichten, Dateien, Dokumente sowie
+Quellcode-Änderungen.
 
-Moderne E-Mail-Client-Software, wie
-[Thunderbird](https://www.thunderbird.net/de/), findet den öffentlichen
+Moderne E-Mail-Clients, wie
+[Thunderbird](https://www.thunderbird.net/de/), finden den öffentlichen
 Schlüssel automatisch
 [über meine E-Mail-Adresse](https://keys.openpgp.org/search?q=alain%40alainwolf.ch).
-Ansonsten:
 
-```bash
-gpg --locate-keys alain@alainwolf.ch
+```text
+Benutzer ID: Alain Wolf <alain@alainwolf.ch>
+Schlüssel ID: 0x722389E427362DC5
+Fingerabdruck: 5143 E0D3 C00C 9DB4 55BD FD76 7223 89E4 2736 2DC5
+Erstellt: 29. Januar 2022
+Läuft ab: 20. Dezember 2024
+Algorithmus & Größe: RSA 4096 Bit
 ```
 
-Oder über Dein Android Smartphone mit [OpenKeychain](openkeychain).
+[OpenPGP Schlüssel herunterladen](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
 
-### Verifizierung
+Um sicher zu gehen, dass ein Schlüssel tatsächlich zu einer bestimmten Person
+gehört, sollte der Fingerabdruck überprüft werden. Im Idealfall geschieht dies
+bei einem persönliches Treffen.
 
-Um zu überprüfen, ob Du auch den richtigen Schlüssel verwendest, kannst Du ihn
-mit den letzen 16 Zeichen des unten angezeigten
-[Fingerprint](https://de.wikipedia.org/wiki/Hashfunktion) vergleichen:
+Auf Android-Smartphones mit installierter
+[OpenKeychain](https://www.openkeychain.org/) App, kann der folgende QR-Code
+verwendet werden, um meinen öffentlichen Schlüssel zu Deinem Schlüsselbund
+hinzuzufügen:
 
-```bash
-gpg --list-keys alain@alainwolf.ch | grep '7223 89E4 2736 2DC5'
+[OpenPGP QR-Code](openpgp)
+
+## S/MIME
+
+Mit dem folgenden persönlichen Zertifikat kannst Du mir verschlüsselte
+[S/MIME](https://en.wikipedia.org/wiki/S/MIME) E-Mail-Nachrichten senden und
+Nachrichten oder Dokumente verifizieren, die ich damit digital signiert habe.
+
+Das Zertifikat wurde von [WiseID](https://wiseid.com/) ausgestellt. Die
+WiseKey-Zertifizierungsstelle wird von allen Webbrowsern, E-Mail-Clients und
+Betriebssystemen als vertrauenswürdig eingestuft.
+
+```text
+Identität: Alain Wolf
+Verifiziert von: WISeKey CertifyID Personal GB CA 3
+Läuft ab: 20. Okotber 2026
+C (Land): CH
+CN (allgemeiner Name): Alain Wolf
+EMAIL (E-Mail-Adresse): alain@alainwolf.ch
 ```
 
-```txt
-Key fingerprint = 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
-```
+Der Aussteller hat meine Namen, E-Mail-Adresse, Land und Identität
+in einem Online-Verfahren anhand meines Personalausweises verifiziert.
 
-Der sicherste Weg wäre, den Fingerprint bei einem persönlichen Treffen zu
-vergleichen.
+Du kannst das Zertifikat herunterladen und in Deine Mail-App oder Betriebssystem
+importieren:
+
+[Zertifikat herunterladen](alain-wolf-chain.pem)
 
 ## SSH Public Key
 
 Auch zur Authentifizierung gegenüber
 [SSH](https://en.wikipedia.org/wiki/Secure_Shell) Servern benutze ich meinen
 OpenPGP-Schlüssel.
+
+Wenn Du meinen OpenPGP-Schlüssel bereits überprüft hast vertraust, kannst Du
+somit auch meinem SSH-Schlüssel vertrauen.
 
 Um mir per SSH Zugriff auf Deine Systeme zu gewähren, kannst Du meinen
 OpenPGP Key als SSH Key exportieren.
@@ -69,6 +98,10 @@ $ gpg --search-keys 0x722389E427362DC5
 $ gpg --export-ssh-key 0x722389E427362DC5 \
     | sudo -u $_SSH_USER tee -a /home/${_SSH_USER}/.ssh/authorized_keys
 ```
+
+Alternativ kannst Du meinen öffentlichen SSH-Schlüssel auch hier herunterladen:
+
+[SSH-Schlüssel herunterladen](0x722389E427362DC5.pub) (4096 Bit RSA)
 
 ## WireGuard VPN
 

@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+UID:b06c9bc7-906e-451e-98f2-a26b1b83f9fa
+FN:Alain Wolf
+N:Wolf;Alain;;;
+BDAY:19670210
+EMAIL;TYPE=HOME:alain@alainwolf.ch
+TEL;TYPE=CELL:+41 78 897 87 76
+TEL;TYPE=HOME:+41 32 510 47 30
+ADR;TYPE=HOME:;;Schüracherstrasse 16;Brüttisellen;;8306;Switzerland
+URL;TYPE=HOME;VALUE=URI:https://alainwolf.ch
+REV:20220702T153041Z
+TZ:Europe/Zurich
+END:VCARD

@@ -1,7 +1,7 @@
 ---
 title: "Public Keys"
 date: 2023-12-03
-lastmod: 2024-09-25
+lastmod: 2024-12-09
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -15,38 +15,69 @@ encryption, signing and authentication.
 
 ## OpenPGP
 
-[OpenPGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) can be used for
-encryption and digtal signing of mail messages, files and code commits.
+[OpenPGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP) can be used
+for encryption of mail messages and files. I'm using it to digitally sign email
+messages, files and code commits.
 
 Modern email client software, like
 [Thunderbird](https://www.thunderbird.net/en-US/), will retrieve the public key
-automatically, based on my email address. Otherwise:
+automatically,
+[based on my email address](https://keys.openpgp.org/search?q=alain%40alainwolf.ch).
 
-```bash
-gpg --locate-keys alain@alainwolf.ch
+```text
+User ID: Alain Wolf <alain@alainwolf.ch>
+Key ID: 0x722389E427362DC5
+Fingerprint: 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
+Created: January 29, 2022
+Expires: December 20, 2024
+Algorithm & Size: RSA 4096 bits
 ```
 
-Or on your Android Smartphone using [OpenKeychain](openkeychain).
+[Download OpenPGP Key](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
 
-### Verification
+To ensure that a key actually belongs to a specific person, the fingerprint
+should be checked. Ideally, this happens during a personal meeting.
 
-To verify that you are using the right key, you can compare the last 16
-characters of the [fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint):
+On Android smartphones with the [OpenKeychain](https://www.openkeychain.org/)
+app installed you can use the following QR-Code to add my public key into your
+keyring:
 
-```bash
-gpg --list-keys alain@alainwolf.ch | grep '7223 89E4 2736 2DC5'
+[OpenPGP QR Code](openpgp)
+
+## S/MIME
+
+The follwoing personal certificate can be used to send me encrypted
+[S/MIME](https://en.wikipedia.org/wiki/S/MIME) mail messages and verify messages
+or documents I have digitally signed with.
+
+The certficate has been issued by [WiseID](https://wiseid.com/). It's WiseKey
+certificate authority is trusted by all web-browsers, mail clients and operating
+systems.
+
+```text
+Identity: Alain Wolf
+Verified by: WISeKey CertifyID Personal GB CA 3
+Expires: October 20, 2026
+C (Country): CH
+CN (Common Name): Alain Wolf
+EMAIL (Email Address): alain@alainwolf.ch
 ```
 
-```txt
-Key fingerprint = 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
-```
+The issuer has verified my name, email-address, country and identity in an
+online process using my national ID card.
 
-The safest way would be to compare the fingerprint in a personal meeting.
+You can download the certificate and import it into your mail app or operating
+system:
+
+[Certificate Download](alain-wolf-chain.pem)
 
 ## SSH Public Key
 
 I use my OpenPGP key to authenticate against
 [SSH](https://en.wikipedia.org/wiki/Secure_Shell) servers too.
+
+If you already have verified and trust my OpenPGP key, you can also safely trust
+my SSH key.
 
 To allow me to access your systems trough SSH, you can export my OpenPGP key as
 SSH key:
@@ -62,6 +93,10 @@ $ gpg --search-keys 0x722389E427362DC5
 $ gpg --export-ssh-key 0x722389E427362DC5 \
     | sudo -u $_SSH_USER tee -a /home/${_SSH_USER}/.ssh/authorized_keys
 ```
+
+Altenatively you can download the my SSH public key:
+
+[SSH Key Download](0x722389E427362DC5.pub) (4096 bits RSA)
 
 ## WireGuard VPN
 
