@@ -1,7 +1,7 @@
 ---
 title: "Öffentliche Schlüssel"
 date: 2023-12-03
-lastmod: 2024-12-09
+lastmod: 2024-12-11
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -31,7 +31,7 @@ Benutzer ID: Alain Wolf <alain@alainwolf.ch>
 Schlüssel ID: 0x722389E427362DC5
 Fingerabdruck: 5143 E0D3 C00C 9DB4 55BD FD76 7223 89E4 2736 2DC5
 Erstellt: 29. Januar 2022
-Läuft ab: 20. Dezember 2024
+Läuft ab: 11. Dezember 2025
 Algorithmus & Größe: RSA 4096 Bit
 ```
 

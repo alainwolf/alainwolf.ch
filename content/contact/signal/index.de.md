@@ -1,7 +1,7 @@
 ---
-title: "Signal QR Code"
+title: "Signal QR-Code"
 date: 2024-12-10
-lastmod: 2024-12-10
+lastmod: 2024-12-11
 showPagination: false
 showReadingTime: false
 showDate: false

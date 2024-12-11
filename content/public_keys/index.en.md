@@ -1,7 +1,7 @@
 ---
 title: "Public Keys"
 date: 2023-12-03
-lastmod: 2024-12-09
+lastmod: 2024-12-11
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -29,7 +29,7 @@ User ID: Alain Wolf <alain@alainwolf.ch>
 Key ID: 0x722389E427362DC5
 Fingerprint: 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
 Created: January 29, 2022
-Expires: December 20, 2024
+Expires: December 11, 2025
 Algorithm & Size: RSA 4096 bits
 ```
 
