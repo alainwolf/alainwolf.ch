@@ -99,6 +99,18 @@ $ gpg --export-ssh-key 0x722389E427362DC5 \
     | sudo -u $_SSH_USER tee -a /home/${_SSH_USER}/.ssh/authorized_keys
 ```
 
+Auf Ubuntu-Linux-Systemen kannst Du meinen öffentlichen Schlüssel auch aus
+[Launchpad](https://launchpad.net/~awolf) oder
+[GitHub](https://github.com/alainwolf) importieren:
+
+```bash
+# Launchpad
+ssh-import-id lp:awolf
+
+# GitHub
+ssh-import-id gh:alainwolf
+```
+
 Alternativ kannst Du meinen öffentlichen SSH-Schlüssel auch hier herunterladen:
 
 [SSH-Schlüssel herunterladen](0x722389E427362DC5.pub) (4096 Bit RSA)
