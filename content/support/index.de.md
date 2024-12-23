@@ -1,7 +1,7 @@
 ---
 title: "Support"
 date: 2023-03-18
-lastmod: 2024-09-25
+lastmod: 2024-12-23
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -14,50 +14,124 @@ Falls Du Hilfe auf Deinem Computer oder Smartphone benötigst, kannst Du mir mit
 der Software [RustDesk](https://rustdesk.com/) die Fernsteuerung deines Gerätes
 erlauben.
 
-Lade dazu das zu deinem Gerät passende Installations-Paket von der
-[RustDesk Homepage](https://rustdesk.com/) herunter, installiere und starte die
-Anwendung.
+### Download
 
-### Einstellungen
+Da sich der Download-Link mit jeder Version ändert, kann ich hier leider keinen
+direkten Link zur Verfügung stellen.
 
-Um die Verbindung übers Internet herzustellen, wird ein Vermittlungs-Dienst
-benötigt.
+Gehe dazu auf die
+[GitHub Release Seite](https://github.com/rustdesk/rustdesk/releases/latest) des
+Projekts und wähle aus der angezeigten Tabelle die passende version für Dein
+System, lade diese herunter und installiere sie:
 
-Der Vermittlungsdienst muss in den Netzwerk-Einstellungen der
-Anwndung eingestellt werden:
+#### Für Windows PC
 
-{{< figure src="rustdesk_network_settings.png" title="RustDesk Network Settings" >}}
+- Architecture: **x86-64 (64-bit)**
+- Windows: **MSI**
 
-#### ID server
+#### MacOS Modelle mit Apple Silicon
 
-```txt
-rds.alainwolf.ch
-```
+Modelle mit M1, M2, M3 oder M4 Prozessor, seit ca. 2020/2021.
 
-Die Felder "**Relay Server**" und "**API Server**" bitte leer lassen.
+Architecture: **AArch64 (ARM64)**
 
-#### Key
+#### MacOS Modelle mit Intel Prozessor
 
-```txt
-46lAtA9LDOLn4dVSqzEvgRAh+lMGYDYu581702Syu8g=
-```
+Apple Modelle bis ca. 2020
 
-Du kannst die folgenden Zeichnekette kopieren und in den Netzwerk-Einstellungen
-einfügen:
+- Architecture: **x86-64 (64-bit)**
+
+### Vermittlungsdienst
+
+Um die Verbindung von meinem zu Deinem Rechner übers Internet herzustellen, wird
+ein Vermittlungs-Dienst benötigt.
+
+Zuunterst im Fenster wird ein Hinweis eingeblendet, dass man einen eigenen
+Server einrichten sollte.
+
+Dieser wird in den Netzwerk-Einstellungen der Anwendung eingestellt:
+
+#### Einstellungen Öffnen
+
+Klicke dazu auf das Hamburger-Menü in der Titelleiste des Fensters:
+
+{{< figure src="rustdesk-setup-step-1.de.png" title="RustDesk Einstellungen: Schritt 1/8" >}}
+
+#### Die Netzwerk-Einstellungen Öffnen
+
+Klicke dazu auf **Netzwerk** in der linken Spalte:
+
+{{< figure src="rustdesk-setup-step-2.de.png" title="RustDesk Einstellungen: Schritt 2/8" >}}
+
+#### Die Netzwerk-Einstellungen Entsperren
+
+Die Einstellungen sind aus Sicherheitsgründen gesperrt.
+
+{{< figure src="rustdesk-setup-step-3.de.png" title="RustDesk Einstellungen: Schritt 3/8" >}}
+
+Nach dem Klick auf den Balken wirst Du von Deinem Betriebssystem aufgefordert
+die Aufhebung der Sperre zu bestätigen.
+
+#### ID/Relay-Server Einstellungen
+
+Klicke auf **ID/Relay-Server**:
+
+{{< figure src="rustdesk-setup-step-4.de.png" title="RustDesk Einstellungen: Schritt 4/8" >}}
+
+Darauf öffnet sich ein neues Dialog-Fenster.
+
+#### Konfiguration Kopieren
+
+Kopiere die folgende lange Zeichnekette in Deine Zwischenablage:
 
 ```txt
 ==Qfi0zZ4UXeTJDM3EDO1UXWEl1RNx2KoFkUnZXR6F3UWRGNux0TExUOBRXQsZDNiojI5V2aiwiIiojIpBXYiwiIiojI5FGblJnIsICaj5iZs92dulWYsFmLzRmciojI0N3boJye
 ```
 
+Sie enthält alle benötigten Konfigurationsdaten in codierter Form.
+
+Wenn Du mit Deiner Maus über das obige Textfeld fährst, wird ein Link
+**Kopieren** erscheinen, den Du anklicken kannst.
+
+#### Konfiguration Einfügen
+
+Zurück in der RustDesk-Konfiguration, klicke auf das Klemmbrett-Symbol im
+Dialogfenster.
+
+{{< figure src="rustdesk-setup-step-5.de.png" title="RustDesk Einstellungen: Schritt 5/8" >}}
+
+Dadurch wird das Formular, mittels den codierten Daten aus Deiner Zwischenablage,
+automatisch ausgefüllt.
+
+{{< figure src="rustdesk-setup-step-6.de.png" title="RustDesk Einstellungen: Schritt 6/8" >}}
+
+Deine Zwischenablage wird anschliessend geleert.
+
+Du kannst das Dialogfenster danach mit einem Klick auf **OK** schliessen.
+
+#### Einstellungen Schliessen
+
+Auch die **Einstellungen** kännen nun wieder geschlossen werden:
+
+{{< figure src="rustdesk-setup-step-7.de.png" title="RustDesk Einstellungen: Schritt 7/8" >}}
+
 ### Verbindung
 
-In der Anwendung sieht du eine aus 3x3 Zahlen bestehende Nummer. Unter dieser
-Nummer kann ich die Verbindung zu Deinem Gerät herstellen.
+Zurück im Hauptfenster, sollte zuunterst nun wiederum ein grüner Punkt mit der
+Statusmeldung "Bereit" sichtbar sein, aber nun ohne den Hinweis, dass man einen
+eigenen Server einrichten sollte.
 
-{{< figure src="rustdesk_desktop_id.png" title="RustDesk Desktop ID" >}}
+{{< figure src="rustdesk-setup-step-8.de.png" title="RustDesk Einstellungen: Schritt 8/8" >}}
 
-Bevor die Verbindung hergestellt wird, wirst du in einem neuen Fenster gefragt
-ob Du diese Verbindung erlauben willst.
+In der linken Spalte unter "Ihr Desktop" wird Dir eine neun- oder zehnstellige
+Nummer angezeigt.
+
+Diese Nummer benötige ich um die Verbindung zu Deinem Rechner aufzubauen.
+
+Bevor die Verbindung hergestellt wird, wirst Du durch ein Dialogfenster gefragt
+ob Du die Verbindung erlauben willst.
+
+**Deine ID-Nummer solltest Du nicht an unbekannte Dritte weiterzugeben!**
 
 ## Sicherheit und Datenschutz
 
@@ -66,8 +140,8 @@ Die Software ist Open-Source, der Code kann überpfüft werden.
 Der Vermittlungsdienst läuft auf einem von mir gemieteten Server in einem
 Schweizer Rechenzentrum.
 
-Sämtliche Kommunikation zwischen den beiden Rechnern und dem Vemittlungsdienst
-ist verschlüsselt.
+Sämtliche Kommunikation zwischen unseren beiden Rechnern und dem
+Vemittlungsdienst ist verschlüsselt.
 
 Es sind, ausser Deinem Intenet-Provider, meinem Internet-Provider und dem
 Schweizer Rechenzentrum, keine weiteren Parteien involviert.
