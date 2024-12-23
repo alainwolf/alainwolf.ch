@@ -49,7 +49,7 @@ summaryLength = 0
     languageName = "Deutsch"
     title = "Alain Wolf"
     weight = 2
-    copyright = "© 2023 Alain Wolf - Alle Rechte vorbehalten"
+    copyright = "© 2024 Alain Wolf - Alle Rechte vorbehalten"
 
     [languages.de.params]
       dateFormat = "2. January 2006"
