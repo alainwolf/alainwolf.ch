@@ -134,7 +134,7 @@ ob Du die Verbindung erlauben willst.
 
 ### Die ID
 
-**Gib Deine ID niemals weiter, ausser an Personen zu denen Du volles vertrauen hast!**
+**Gib Deine ID niemals weiter, ausser an Personen zu denen Du volles Vertrauen hast!**
 
 Du kannst Dir in den **Einstellungen** unter der Rubrik **Sicherheit** jederzeit
 eine neue zufällige ID erzeugen.
@@ -142,7 +142,7 @@ eine neue zufällige ID erzeugen.
 ### Die Software
 
 Die RustDesk Software ist Open-Source, der Code kann
-[überpfüft](https://github.com/rustdesk/rustdesk) werden.
+[überprüft](https://github.com/rustdesk/rustdesk) werden.
 
 ### Der Relay Server
 
