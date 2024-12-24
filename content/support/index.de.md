@@ -121,21 +121,30 @@ Zurück im Hauptfenster, sollte zuunterst nun wiederum ein grüner Punkt mit der
 Statusmeldung "Bereit" sichtbar sein, aber nun ohne den Hinweis, dass man einen
 eigenen Server einrichten sollte.
 
-{{< figure src="rustdesk-setup-step-8.de.png" title="RustDesk Einstellungen: Schritt 8/8" >}}
-
-In der linken Spalte unter "Ihr Desktop" wird Dir eine neun- oder zehnstellige
-Nummer angezeigt.
+In der linken Spalte unter "Ihr Desktop" wird Dir eine Nummer angezeigt.
 
 Diese Nummer benötige ich um die Verbindung zu Deinem Rechner aufzubauen.
+
+{{< figure src="rustdesk-setup-step-8.de.png" title="RustDesk Einstellungen: Schritt 8/8" >}}
 
 Bevor die Verbindung hergestellt wird, wirst Du durch ein Dialogfenster gefragt
 ob Du die Verbindung erlauben willst.
 
-**Deine ID-Nummer solltest Du nicht an unbekannte Dritte weiterzugeben!**
-
 ## Sicherheit und Datenschutz
 
-Die Software ist Open-Source, der Code kann überpfüft werden.
+### Die ID
+
+**Gib Deine ID niemals weiter, ausser an Personen zu denen Du volles vertrauen hast!**
+
+Du kannst Dir in den **Einstellungen** unter der Rubrik **Sicherheit** jederzeit
+eine neue zufällige ID erzeugen.
+
+### Die Software
+
+Die RustDesk Software ist Open-Source, der Code kann
+[überpfüft](https://github.com/rustdesk/rustdesk) werden.
+
+### Der Relay Server
 
 Der Vermittlungsdienst läuft auf einem von mir gemieteten Server in einem
 Schweizer Rechenzentrum.

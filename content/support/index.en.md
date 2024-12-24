@@ -117,19 +117,27 @@ Back in the main window, a green dot with the status message "Ready" should be
 visible at the bottom, but this time without the note that you should set up
 your own server.
 
-{{< figure src="rustdesk-setup-step-8.en.png" title="RustDesk Settings: Step 8/8" >}}
-
-In the left column under "Your Desktop" you will see a nine or ten-digit number.
+In the left column under "Your Desktop" you will see a number.
 
 I need this number to establish the connection to your computer.
 
-Before the connection is established, you will be asked, if you want to allow it.
+{{< figure src="rustdesk-setup-step-8.en.png" title="RustDesk Settings: Step 8/8" >}}
 
-**You should not give your ID number to unknown third parties!**
+Before the connection is established, you will be asked, if you want to allow it.
 
 ## Security and privacy
 
-The software is open source, the code can be audited.
+### The ID
+
+**Never disclose your ID, except to people you fully trust!**
+
+You can generate a new random ID at any time in the **Settings** under the
+**Security** section.
+
+### The Software
+
+The RustDesk software is open source, the code can be
+[reviewed](https://github.com/rustdesk/rustdesk).
 
 The relay service runs on a server I rented in a Swiss data center.
 
