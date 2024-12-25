@@ -1,7 +1,7 @@
 ---
 title: "Öffentliche Schlüssel"
 date: 2023-12-03
-lastmod: 2024-12-11
+lastmod: 2024-12-25
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -35,7 +35,7 @@ Läuft ab: 11. Dezember 2025
 Algorithmus & Größe: RSA 4096 Bit
 ```
 
-[OpenPGP Schlüssel herunterladen](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
+[Öffentlichen OpenPGP Schlüssel herunterladen (ASCII-Textformat)](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
 
 Um sicher zu gehen, dass ein Schlüssel tatsächlich zu einer bestimmten Person
 gehört, sollte der Fingerabdruck überprüft werden. Im Idealfall geschieht dies
@@ -48,32 +48,39 @@ hinzuzufügen:
 
 [OpenPGP QR-Code](openpgp)
 
-## S/MIME
+## S/MIME Zertifikat
 
 Mit dem folgenden persönlichen Zertifikat kannst Du mir verschlüsselte
 [S/MIME](https://en.wikipedia.org/wiki/S/MIME) E-Mail-Nachrichten senden und
 Nachrichten oder Dokumente verifizieren, die ich damit digital signiert habe.
 
-Das Zertifikat wurde von [WiseID](https://wiseid.com/) ausgestellt. Die
-WiseKey-Zertifizierungsstelle wird von allen Webbrowsern, E-Mail-Clients und
-Betriebssystemen als vertrauenswürdig eingestuft.
+Die [WISeID Identity Platform](https://wiseid.com/) hat meinen Namen, meine
+E-Mail-Adresse, mein Land und meine Identität in einem Online-Prozess anhand
+meines Personalausweises verifiziert. Anschließend werden Zertifikate von
+[WISeKeys Zertifizierungsstellen](https://www.wisekey.com) ausgestellt, die von
+allen Webbrowsern, E-Mail-Clients und Betriebssystemen als vertrauenswürdig
+eingestuft werden.
 
-```text
-Identität: Alain Wolf
-Verifiziert von: WISeKey CertifyID Personal GB CA 3
-Läuft ab: 20. Okotber 2026
-C (Land): CH
-CN (allgemeiner Name): Alain Wolf
-EMAIL (E-Mail-Adresse): alain@alainwolf.ch
+```Text
+Ausgestellt für:
+    Name: Alain Wolf
+    E-Mail: alain@alainwolf.ch
+    Land: CH
+Ausgestellt durch:
+    Name: WISeKey CertifyID Personal GB CA 3
+    Organisation: WiseKey
+    Land: CH
+Seriennummer:
+  17:a9:b7:ec:67:7e:57:9e:8e:ef:94:f9:59:5b:1c:e4:15:93:72:4e
+Erstellt: 20. Oktober 2024
+Läuft ab: 20. Oktober 2026
+Algorithmus & Grösse: RSA 2048 Bit
 ```
-
-Der Aussteller hat meine Namen, E-Mail-Adresse, Land und Identität
-in einem Online-Verfahren anhand meines Personalausweises verifiziert.
 
 Du kannst das Zertifikat herunterladen und in Deine Mail-App oder Betriebssystem
 importieren:
 
-[Zertifikat herunterladen](alain-wolf-chain.pem)
+[Zertifikat herunterladen – PEM-Format (.crt)](17a9b7ec677e579e8eef94f9595b1ce41593724e.crt)
 
 ## SSH Public Key
 
@@ -81,8 +88,8 @@ Auch zur Authentifizierung gegenüber
 [SSH](https://en.wikipedia.org/wiki/Secure_Shell) Servern benutze ich meinen
 OpenPGP-Schlüssel.
 
-Wenn Du meinen OpenPGP-Schlüssel bereits überprüft hast vertraust, kannst Du
-somit auch meinem SSH-Schlüssel vertrauen.
+Wenn Du meinen OpenPGP-Schlüssel bereits überprüft hast und ihm vertraust,
+kannst Du somit auch meinem SSH-Schlüssel vertrauen.
 
 Um mir per SSH Zugriff auf Deine Systeme zu gewähren, kannst Du meinen
 OpenPGP Key als SSH Key exportieren.
@@ -113,7 +120,7 @@ ssh-import-id gh:alainwolf
 
 Alternativ kannst Du meinen öffentlichen SSH-Schlüssel auch hier herunterladen:
 
-[SSH-Schlüssel herunterladen](0x722389E427362DC5.pub) (4096 Bit RSA)
+[Öffentlichen SSH-Schlüssel herunterladen (RSA 4096 Bit)](0x722389E427362DC5.pub)
 
 ## WireGuard VPN
 
@@ -121,5 +128,8 @@ Für VPN Verbindungen mit [WireGuard](https://www.wireguard.com/), kann der
 folgende öffentliche Wireguard Schlüssel verwendet werden:
 
 ```text
-VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
+[Peer]
+PublicKey = VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
 ```

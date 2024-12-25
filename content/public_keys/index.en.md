@@ -1,7 +1,7 @@
 ---
 title: "Public Keys"
 date: 2023-12-03
-lastmod: 2024-12-11
+lastmod: 2024-12-25
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -33,7 +33,7 @@ Expires: December 11, 2025
 Algorithm & Size: RSA 4096 bits
 ```
 
-[Download OpenPGP Key](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
+[Download OpenPGP public key (ASCII text format)](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
 
 To ensure that a key actually belongs to a specific person, the fingerprint
 should be checked. Ideally, this happens during a personal meeting.
@@ -44,32 +44,38 @@ keyring:
 
 [OpenPGP QR Code](openpgp)
 
-## S/MIME
+## S/MIME Certificate
 
-The follwoing personal certificate can be used to send me encrypted
+The following personal certificate can be used to send me encrypted
 [S/MIME](https://en.wikipedia.org/wiki/S/MIME) mail messages and verify messages
 or documents I have digitally signed with.
 
-The certficate has been issued by [WiseID](https://wiseid.com/). It's WiseKey
-certificate authority is trusted by all web-browsers, mail clients and operating
-systems.
+The [WISeID Identity Platform](https://wiseid.com/) has verified my name,
+email-address, country and identity in an online process using my national ID
+card. Certificates are then issued by
+[WISeKey’s Certification Authorities](https://www.wisekey.com), which are
+trusted by all web-browsers, mail clients and operating systems.
 
 ```text
-Identity: Alain Wolf
-Verified by: WISeKey CertifyID Personal GB CA 3
+Subject:
+    Name: Alain Wolf
+    Email: alain@alainwolf.ch
+    Country: CH
+Issued by:
+    Name: WISeKey CertifyID Personal GB CA 3
+    Organization: WiseKey
+    Country: CH
+Serial:
+  17:a9:b7:ec:67:7e:57:9e:8e:ef:94:f9:59:5b:1c:e4:15:93:72:4e
+Created: October 20, 2024
 Expires: October 20, 2026
-C (Country): CH
-CN (Common Name): Alain Wolf
-EMAIL (Email Address): alain@alainwolf.ch
+Algorithm & Size: RSA 2048 bits
 ```
-
-The issuer has verified my name, email-address, country and identity in an
-online process using my national ID card.
 
 You can download the certificate and import it into your mail app or operating
 system:
 
-[Certificate Download](alain-wolf-chain.pem)
+[Download Certificate - PEM format (.crt)](17a9b7ec677e579e8eef94f9595b1ce41593724e.crt)
 
 ## SSH Public Key
 
@@ -108,7 +114,7 @@ ssh-import-id gh:alainwolf
 
 Altenatively you can download my SSH public key:
 
-[SSH Key Download](0x722389E427362DC5.pub) (4096 bits RSA)
+[Download SSH public key (RSA 4096 bits)](0x722389E427362DC5.pub)
 
 ## WireGuard VPN
 
@@ -116,5 +122,8 @@ For VPN connections with [WireGuard](https://www.wireguard.com/), you can use
 this WireGuard public key of my personal computer:
 
 ```text
-VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
+[Peer]
+PublicKey = VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
 ```
