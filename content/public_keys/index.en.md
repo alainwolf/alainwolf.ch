@@ -55,9 +55,11 @@ The follwoing personal certificate can be used to send me encrypted
 [S/MIME](https://en.wikipedia.org/wiki/S/MIME) mail messages and verify messages
 or documents I have digitally signed with.
 
-The certficate has been issued by [WiseID](https://wiseid.com/). It's WiseKey
-certificate authority is trusted by all web-browsers, mail clients and operating
-systems.
+The [WISeID Identity Platform](https://wiseid.com/) has verified my name,
+email-address, country and identity in an online process using my national ID
+card. Certificates are then issued by
+[WISeKey’s Certification Authorities](https://www.wisekey.com), which are
+trusted by all web-browsers, mail clients and operating systems.
 
 ```text
 Subject Name:
@@ -75,9 +77,6 @@ Issued Certificate
   Not Valid Before: 2024-12-25
   Not Valid After: 2026-12-25
 ```
-
-The issuer has verified my name, email-address, country and identity in an
-online process using my national ID card.
 
 Download my certificate:
 
@@ -134,5 +133,8 @@ For VPN connections with [WireGuard](https://www.wireguard.com/), you can use
 this WireGuard public key of my personal computer:
 
 ```text
-VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
+[Peer]
+PublicKey = VM37YPASrxm1x2BuAAx5ep+IiIKdlil2Y3q9jX8tQBM=
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
 ```
