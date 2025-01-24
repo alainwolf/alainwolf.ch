@@ -6,6 +6,7 @@ showPagination: false
 showReadingTime: false
 showDate: false
 showDateUpdated: true
+showTableOfContents: true
 ---
 
 {{< lead >}}
