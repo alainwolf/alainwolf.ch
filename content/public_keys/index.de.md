@@ -1,13 +1,7 @@
 ---
 title: "Öffentliche Schlüssel"
 date: 2023-12-03
-<<<<<<< HEAD
 lastmod: 2025-01-23
-||||||| 798b2a7
-lastmod: 2024-12-11
-=======
-lastmod: 2024-12-25
->>>>>>> f26e11752ffb9c5a52b9234f168d682c83bfef3d
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -41,16 +35,10 @@ Läuft ab: 11. Dezember 2025
 Algorithmus & Größe: RSA 4096 Bit
 ```
 
-<<<<<<< HEAD
 Meinen OpenPGP Schlüssel herunterladen:
 
 - [ASCII Text-Format (.asc)](/public_keys/0x722389E427362DC5.asc)
 - [Binär-Datei (.gpg)](/public_keys/0x722389E427362DC5.gpg)
-||||||| 798b2a7
-[OpenPGP Schlüssel herunterladen](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
-=======
-[Öffentlichen OpenPGP Schlüssel herunterladen (ASCII-Textformat)](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
->>>>>>> f26e11752ffb9c5a52b9234f168d682c83bfef3d
 
 Um sicher zu gehen, dass ein Schlüssel tatsächlich zu einer bestimmten Person
 gehört, sollte der Fingerabdruck überprüft werden. Im Idealfall geschieht dies
@@ -79,7 +67,6 @@ meines Personalausweises verifiziert. Anschließend werden Zertifikate von
 allen Webbrowsern, E-Mail-Clients und Betriebssystemen als vertrauenswürdig
 eingestuft werden.
 
-<<<<<<< HEAD
 ```text
 Subject Name:
   C (Country): CH
@@ -95,47 +82,17 @@ Issued Certificate
     3E 7A EF 83 BB 80 1C D1 82 39 78 58 C8 39 11 C8 39 2C 67 69
   Not Valid Before: 2024-12-25
   Not Valid After: 2026-12-25
-||||||| 798b2a7
-```text
-Identität: Alain Wolf
-Verifiziert von: WISeKey CertifyID Personal GB CA 3
-Läuft ab: 20. Okotber 2026
-C (Land): CH
-CN (allgemeiner Name): Alain Wolf
-EMAIL (E-Mail-Adresse): alain@alainwolf.ch
-=======
-```Text
-Ausgestellt für:
-    Name: Alain Wolf
-    E-Mail: alain@alainwolf.ch
-    Land: CH
-Ausgestellt durch:
-    Name: WISeKey CertifyID Personal GB CA 3
-    Organisation: WiseKey
-    Land: CH
-Seriennummer:
-  17:a9:b7:ec:67:7e:57:9e:8e:ef:94:f9:59:5b:1c:e4:15:93:72:4e
-Erstellt: 20. Oktober 2024
-Läuft ab: 20. Oktober 2026
-Algorithmus & Grösse: RSA 2048 Bit
->>>>>>> f26e11752ffb9c5a52b9234f168d682c83bfef3d
 ```
 
 Du kannst das Zertifikat herunterladen und in Deine Mail-App oder Betriebssystem
 importieren:
 
-<<<<<<< HEAD
 Zertifikat herunterladen:
 
 - [Nur Zertifikat im PEM Text-Format (.crt)](/public_keys/c83911c8392c6769.crt)
 - [Nur Zertifikat als DER Binär-Datei (.der)](/public_keys/c83911c8392c6769.der)
 - [Zertifikatskette im PEM Text-Format (.pem)](/public_keys/c83911c8392c6769-chain.pem)
 - [Zertifikatskette im PKCS#7 Format (.p7b)](/public_keys/c83911c8392c6769-chain.p7b)
-||||||| 798b2a7
-[Zertifikat herunterladen](alain-wolf-chain.pem)
-=======
-[Zertifikat herunterladen – PEM-Format (.crt)](17a9b7ec677e579e8eef94f9595b1ce41593724e.crt)
->>>>>>> f26e11752ffb9c5a52b9234f168d682c83bfef3d
 
 ## SSH Public Key
 
@@ -178,13 +135,7 @@ ssh-import-id gh:alainwolf
 
 Alternativ kannst Du meinen öffentlichen SSH-Schlüssel auch hier herunterladen:
 
-<<<<<<< HEAD
 - [RSA Public-Key im OpenSSH-Format (id_rsa.pub)](/public_keys/id_rsa.pub)
-||||||| 798b2a7
-[SSH-Schlüssel herunterladen](0x722389E427362DC5.pub) (4096 Bit RSA)
-=======
-[Öffentlichen SSH-Schlüssel herunterladen (RSA 4096 Bit)](0x722389E427362DC5.pub)
->>>>>>> f26e11752ffb9c5a52b9234f168d682c83bfef3d
 
 ## WireGuard VPN
 
