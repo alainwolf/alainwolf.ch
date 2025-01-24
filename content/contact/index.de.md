@@ -15,18 +15,25 @@ Zur sicheren signierten und verschlüsselten Kommunikation können meine
 Um mich zu Deinem Adressbuch hinzuzufügen, kannst Du
 [diese vCard-Datei](/Alain_Wolf.de.vcf) herunterladen oder den
 folgenden QR-Code scannen:
-{{< qr level="medium" scale=4 alt="vCard von Alain Wolf" title="vCard von Alain Wolf" >}}
+{{< qr level="medium" scale=6 alt="vCard von Alain Wolf" title="vCard von Alain Wolf" >}}
 BEGIN:VCARD
 VERSION:3.0
-FN;CHARSET=UTF-8:Alain Wolf
-N;CHARSET=UTF-8:Wolf;Alain;;;
-GENDER:M
-EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:alain@alainwolf.ch
-TEL;TYPE=CELL:+41 78 897 87 76
-TEL;TYPE=HOME,VOICE:+41 32 510 47 30
-ADR;CHARSET=UTF-8;TYPE=HOME:;;Schüracherstrasse;Brüttisellen;ZH;8306;Schweiz
-URL;CHARSET=UTF-8:https://alainwolf.ch/
-REV:2025-01-23T12:07:42.476Z
+PRODID:-//Sabre//Sabre VObject 4.5.4//EN
+UID:3ed609d8-8dc9-43be-8078-230428e2777c
+FN:Alain Wolf
+N:Wolf;Alain;;;
+BDAY:19670210
+EMAIL;TYPE=PREF;TYPE=HOME:alain@alainwolf.ch
+EMAIL;TYPE=OTHER:wolf@mailbox.org
+EMAIL;TYPE=OTHER:alainw@protonmail.ch
+EMAIL;TYPE=OTHER:wolf@restkultur.ch
+TEL;TYPE=PREF;TYPE=CELL:+41 78 897 87 76
+TEL;TYPE=HOME:+41 32 510 47 30
+TEL;TYPE=WORK:+41 44 589 68 51
+ADR;TYPE=HOME:;;Schüracherstrasse 16;Brüttisellen;;8306;Schweiz
+IMPP:sgnl:41788978776
+URL;TYPE=HOME:https://alainwolf.ch/de/
+REV:2025-01-24T11:36:45Z
 END:VCARD
 {{< /qr >}}
 {{< /details >}}
