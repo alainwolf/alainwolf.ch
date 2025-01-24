@@ -1,11 +1,12 @@
 ---
 title: "Contact"
 date: 2024-01-15
-lastmod: 2025-01-23
+lastmod: 2025-01-24
 showPagination: false
 showReadingTime: false
 showDate: false
 showDateUpdated: true
+showTableOfContents: true
 ---
 For secure signed and encrypted communication please see my
 [public keys]({{< ref "public_keys.en" >}}).
@@ -42,16 +43,46 @@ END:VCARD
 - Home: [+41 32 510 47 30](tel:+41325104730)
 
 
-## Instant Messages
+## Instant Messaging
+
+Apart from the ones described here, [I currently don't use any other](#sorry)
+instant messengers.
+
+### Signal
 
 To connect with me on [Signal](https://signal.org) you can add
 [AlainWolf.50](https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK)
 to your Signal contacts or scan the following QR code with your smartphone:
 
 {{< details summary="Signal QR Code" >}}
-{{< qr level="medium" scale=6 alt="QR code for Signal Messenger" title="AlainWolf.50" >}}
+{{< qr level="medium" scale=4 alt="QR code for Signal Messenger" title="AlainWolf.50" >}}
 https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK
 {{< /qr >}}
+{{< /details >}}
+
+### Threema
+
+To contact me via [Threema](https://threema.ch/de/sicherer-messenger), you can
+add [VX74PUMD](https://threema.id/VX74PUMD) to your Threema contacts or scan the
+following QR code with your smartphone:
+
+{{< details summary="Threema QR-Code" >}}
+{{< qr level="medium" scale=6 alt="QR-Ccode für Threema Messenger" title="VX74PUMD" >}}
+https://threema.id/VX74PUMD
+{{< /qr >}}
+{{< /details >}}
+
+{{< details summary="Threema Public Key" >}}
+```text
+f 9 4 c 6 0 8 c
+9 7 2 8 1 a 7 9
+a 3 a a c 7 4 4
+b f 1 6 8 c b b
+4 d 6 0 9 3 9 6
+7 7 5 3 b 1 f 2
+1 7 6 b 1 4 0 f
+0 5 4 7 f 8 7 3
+```
 {{< /details >}}
 
 ## Location

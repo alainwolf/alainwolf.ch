@@ -1,11 +1,12 @@
 ---
 title: "Kontakt"
 date: 2023-01-15
-lastmod: 2025-01-23
+lastmod: 2025-01-24
 showPagination: false
 showReadingTime: false
 showDate: false
 showDateUpdated: true
+showTableOfContents: true
 ---
 
 Zur sicheren signierten und verschlüsselten Kommunikation können meine
@@ -42,16 +43,48 @@ END:VCARD
 - Home: [+41 32 510 47 30](tel:+41325104730)
 - Mobile: [+41 78 897 87 76](tel:+41788978776)
 
-## Sofort-Nachrichten
+## Instant Messaging
 
-Um mit mir über [Signal](https://signal.org) in Kontakt zu treten, kannst Du
+Ausser den hier beschriebenen, [verwende ich zurzeit keine weiteren](#sorry)
+Instant Messenger.
+
+### Signal Messenger
+
+Um mit mir über [Signal](https://signal.org/de/) in Kontakt zu treten, kannst Du
 [AlainWolf.50](https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK)
-zu Deinen Signal-Kontakten hinzufügen oder den folgenden QR-Code mit Deinem Smartphone einscannen:
+zu Deinen Signal-Kontakten hinzufügen oder den folgenden QR-Code mit Deinem
+Smartphone einscannen:
 
 {{< details summary="Signal QR-Code" >}}
-{{< qr level="medium" scale=6 alt="QR-Ccode für Signal Messenger" title="AlainWolf.50" >}}
+{{< qr level="medium" scale=4 alt="QR-Ccode für Signal Messenger" title="AlainWolf.50" >}}
 https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK
 {{< /qr >}}
+{{< /details >}}
+
+### Threema
+
+Um mit mir über [Threema](https://threema.ch/de/sicherer-messenger) in Kontakt
+zu treten, kannst Du [VX74PUMD](https://threema.id/VX74PUMD) zu Deinen
+Threema-Kontakten hinzufügen oder den folgenden QR-Code mit Deinem Smartphone
+einscannen:
+
+{{< details summary="Threema QR-Code" >}}
+{{< qr level="medium" scale=6 alt="QR-Ccode für Threema Messenger" title="VX74PUMD" >}}
+https://threema.id/VX74PUMD
+{{< /qr >}}
+{{< /details >}}
+
+{{< details summary="Threema Public Key" >}}
+```text
+f 9 4 c 6 0 8 c
+9 7 2 8 1 a 7 9
+a 3 a a c 7 4 4
+b f 1 6 8 c b b
+4 d 6 0 9 3 9 6
+7 7 5 3 b 1 f 2
+1 7 6 b 1 4 0 f
+0 5 4 7 f 8 7 3
+```
 {{< /details >}}
 
 ## Adresse
@@ -93,7 +126,7 @@ anderen kompatiblen Plattformen zu teilen, wie zum Beispiel [Nextcloud](https://
 
 ### Sorry
 
-Du wirst mich nicht finden auf ...
+Du findest mich nicht finden auf ...
 
 Discord,
 Disqus,
