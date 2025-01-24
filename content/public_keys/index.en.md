@@ -1,7 +1,7 @@
 ---
 title: "Public Keys"
 date: 2023-12-03
-lastmod: 2024-12-11
+lastmod: 2025-01-23
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -21,8 +21,7 @@ messages, files and code commits.
 
 Modern email client software, like
 [Thunderbird](https://www.thunderbird.net/en-US/), will retrieve the public key
-automatically,
-[based on my email address](https://keys.openpgp.org/search?q=alain%40alainwolf.ch).
+automatically, [based on my email address](https://keys.openpgp.org/search?q=alain%40alainwolf.ch).
 
 ```text
 User ID: Alain Wolf <alain@alainwolf.ch>
@@ -33,16 +32,22 @@ Expires: December 11, 2025
 Algorithm & Size: RSA 4096 bits
 ```
 
-[Download OpenPGP Key](https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5)
+Download my OpenPGP public key:
+
+- [ASCII text format (.asc)](/public_keys/0x722389E427362DC5.asc)
+- [Binary format (.gpg)](/public_keys/0x722389E427362DC5.gpg)
 
 To ensure that a key actually belongs to a specific person, the fingerprint
 should be checked. Ideally, this happens during a personal meeting.
 
+{{< details summary="OpenKeychain" >}}
 On Android smartphones with the [OpenKeychain](https://www.openkeychain.org/)
 app installed you can use the following QR-Code to add my public key into your
 keyring:
-
-[OpenPGP QR Code](openpgp)
+{{< qr level="medium" scale=6 alt="OpenPGP QR code" title="OpenPGP FD76 7223 89E4 2736 2DC5" >}}
+OPENPGP4FPR:5143E0D3C00C9DB455BDFD76722389E427362DC5
+{{< /qr >}}
+{{< /details >}}
 
 ## S/MIME
 
@@ -55,21 +60,33 @@ certificate authority is trusted by all web-browsers, mail clients and operating
 systems.
 
 ```text
-Identity: Alain Wolf
-Verified by: WISeKey CertifyID Personal GB CA 3
-Expires: October 20, 2026
-C (Country): CH
-CN (Common Name): Alain Wolf
-EMAIL (Email Address): alain@alainwolf.ch
+Subject Name:
+  C (Country): CH
+  CN (Common Name): Alain Wolf
+  EMAIL (Email Address): alain@alainwolf.ch
+Issuer Name:
+  C (Country): CH
+  O (Organization): WISeKey
+  CN (Common Name): WISeKey CertifyID Personal GB CA 3
+Issued Certificate
+  Version: 3
+  Serial Number:
+    3E 7A EF 83 BB 80 1C D1 82 39 78 58 C8 39 11 C8 39 2C 67 69
+  Not Valid Before: 2024-12-25
+  Not Valid After: 2026-12-25
 ```
 
 The issuer has verified my name, email-address, country and identity in an
 online process using my national ID card.
 
-You can download the certificate and import it into your mail app or operating
-system:
+Download my certificate:
 
-[Certificate Download](alain-wolf-chain.pem)
+- [Certificate only PEM text format (.crt)](/public_keys/c83911c8392c6769.crt)
+- [Certificate only DER binary format (.der)](/public_keys/c83911c8392c6769.der)
+- [Certificate chain PEM text format (.pem)](/public_keys/c83911c8392c6769-chain.pem)
+- [Certificate chain PKCS#7 format (.p7b)](/public_keys/c83911c8392c6769-chain.p7b)
+
+You can then import it into your mail app or operating system.
 
 ## SSH Public Key
 
@@ -86,12 +103,13 @@ SSH key:
 # My user ID on your system (change as needed)
 $ _SSH_USER=wolf
 
-# Search and install my OpenPGP key
+# Search and add my public key to your keyring
 $ gpg --search-keys 0x722389E427362DC5
 
-# Export and install my SSH key
+# Export my SSH public key from your keyring and install it
 $ gpg --export-ssh-key 0x722389E427362DC5 \
-    | sudo -u $_SSH_USER tee -a /home/${_SSH_USER}/.ssh/authorized_keys
+    | sudo -u $_SSH_USER tee -a \
+        /home/${_SSH_USER}/.ssh/authorized_keys
 ```
 
 On Ubuntu Linux systems you can get my public key from either
@@ -108,7 +126,7 @@ ssh-import-id gh:alainwolf
 
 Altenatively you can download my SSH public key:
 
-[SSH Key Download](0x722389E427362DC5.pub) (4096 bits RSA)
+- [OpenSSH RSA public key format (id_rsa.pub)](/public_keys/id_rsa.pub)
 
 ## WireGuard VPN
 

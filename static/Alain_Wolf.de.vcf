@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Wolf;Alain;;;Alain wolf
+FN;CHARSET=UTF-8: Alain Wolf
+URL;PRIVATE:https://alainwolf.ch
+EMAIL;type=HOME:alain@alainwolf.ch
+TEL;type=HOME;VOICE:+41 32 510 47 30
+ADR;CHARSET=UTF-8;HOME;type=pref:;;Schüracherstrasse 16;Brüttisellen;;8306;Schweiz
+LABEL;HOME;PREF;ENCODING=QUOTED-PRINTABLE;CHARSET=UTF-8:Schüracherstrasse 16=0D=0A=
+8306 Brüttisellen Schweiz
+REV:2025-01-23T13:01:36+01:00
+END:VCARD
