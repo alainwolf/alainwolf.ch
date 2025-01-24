@@ -1,7 +1,7 @@
 ---
 title: "Impressum"
 date: 2023-01-15
-lastmod: 2024-05-16
+lastmod: 2025-01-24
 showDate: false
 showDateUpdated: true
 showTableOfContents: true
@@ -37,19 +37,25 @@ The layout is created by [Congo](https://jpanther.github.io/congo/). Congo is
 one of [many design themes](https://themes.gohugo.io/) for Hugo and uses
 [Tailwind CSS](https://tailwindcss.com/) for formatting.
 
+### Hosting
+
+Self-hosted.
+
 ### Server
 
-Software: [Nginx Webserver](https://nginx.org/de/)
+Software: [Caddy Webserver](https://caddyserver.com/)
 
-OS: [Ubuntu Linux](https://ubuntu.com/server)
+OS: [Ubuntu Linux Server](https://ubuntu.com/server)
 
-Hardware:
+#### Server Hardware
 
-- CPU: Intel® 4-Core™ i5-4590T 2.0 GHz 6MB cache
-- RAM: 16 GB DDR3 1,600 MHz
-- Disk: 500 GB SATA SSD
-- Year of manufacture: 2017
+HPE ProLiant MicroServer Gen10 Plus v2:
+
+- CPU: Intel© Xeon© E-2314 @ 2.80GHz
+- Memory: 64GB DDR4 3.2 GHz
+- Disks: 4 x 4TB SATA3 SSD (RAID 5, 12TB)
+- Year of manufacture: 2023
 
 ### Internet
 
-1 Gbit/s up-/download dual-stack IPv4/IPv6 by [Init7](https://www.init7.net/)
+1 Gbit/s up-/download Dual-Stack IPv4/IPv6 from [Init7](https://www.init7.net/)
