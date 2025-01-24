@@ -77,11 +77,12 @@ https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C
 
 ### Federated Cloud (Nextcloud)
 
-Federated-Cloud-ID:
+Federated Cloud Sharing ermöglicht es Nutzern, schnell und einfach Datein mit
+anderen kompatiblen Plattformen zu teilen, wie zum Beispiel [Nextcloud](https://nextcloud.com/features/#federation) oder [ownCloud](https://owncloud.com/de/eigenschaften/federated-cloud-sharing/)
+
+#### Meine Federated Cloud-ID
 
     wolf@cloud.urown.net
-
-Siehe <https://nextcloud.com/de/federation/>.
 
 ### Sorry
 

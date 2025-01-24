@@ -77,7 +77,11 @@ https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C
 
 ### Federated Cloud File Sharing
 
-Federated cloud file sharing allows users of file collaboration platforms, like [Nextcloud](https://nextcloud.com/features/#federation) or [ownCloud](https://owncloud.com/federated-cloud-sharing/) to share files and folders with users of other compatible platforms, by simlpy using the persons **federated Cloud-ID**, in the form of **user@server**.
+Federated cloud file sharing allows users of file collaboration platforms, like
+[Nextcloud](https://nextcloud.com/features/#federation) or
+[ownCloud](https://owncloud.com/federated-cloud-sharing/) to share files and
+folders with users of other compatible platforms, by simlpy using the persons
+**federated Cloud-ID**, in the form of **user@server**.
 
 #### My Federated Cloud-ID
 
