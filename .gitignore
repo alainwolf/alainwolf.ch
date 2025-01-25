@@ -68,3 +68,9 @@ bower_components
 # AWS stuff for publishing static files
 .aws-credentials.json
 .awspublish*
+
+# Whitelist OpenSSL in static/public_keys directory
+!static/public_keys/*.crt
+!static/public_keys/*.pem
+!static/public_keys/*.der
+!static/public_keys/*.p7b
