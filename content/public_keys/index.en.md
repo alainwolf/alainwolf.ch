@@ -1,7 +1,7 @@
 ---
 title: "Public Keys"
 date: 2023-12-03
-lastmod: 2025-01-23
+lastmod: 2025-01-25
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -24,22 +24,34 @@ Modern email client software, like
 [Thunderbird](https://www.thunderbird.net/en-US/), will retrieve the public key
 automatically, [based on my email address](https://keys.openpgp.org/search?q=alain%40alainwolf.ch).
 
-```text
-User ID: Alain Wolf <alain@alainwolf.ch>
-Key ID: 0x722389E427362DC5
-Fingerprint: 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
-Created: January 29, 2022
-Expires: December 11, 2025
-Algorithm & Size: RSA 4096 bits
-```
+{{< alert "triangle-exclamation" >}}
+Have the owner of the private key confirm that you actually have his public key
+by comparing your <strong><font color=secondary-100>fingerprints</font></strong>,
+ideally during a face-to-face meeting.
+{{< /alert >}}
 
-Download my OpenPGP public key:
+<pre>
+User ID: <strong>Alain Wolf &ltalain@alainwolf.ch&gt</strong>
+Key ID: <strong>7223 89E4 2736 2DC5</strong>
+Fingerprint:
+  <strong><font color=secondary-100>5143 E0D3 C00C 9DB4 55BD
+  FD76 7223 89E4 2736 2DC5</font></strong>
+Created: <strong>January 29, 2022</strong>
+Expires: <strong>December 11, 2025</strong>
+Algorithm & Size: <strong>RSA 4096 bits</strong>
+</pre>
 
-- [ASCII text format (.asc)](/public_keys/0x722389E427362DC5.asc)
-- [Binary format (.gpg)](/public_keys/0x722389E427362DC5.gpg)
+Alternatively, you can download the public key here:
 
-To ensure that a key actually belongs to a specific person, the fingerprint
-should be checked. Ideally, this happens during a personal meeting.
+{{< button href="/public_keys/0x722389E427362DC5.asc">}}
+Download OpenPGP Key
+{{< /button >}}
+
+<br />
+
+The downloaded file, in ASCII armored text format, must then be imported into
+your keyring.
+
 
 {{< details summary="OpenKeychain" >}}
 On Android smartphones with the [OpenKeychain](https://www.openkeychain.org/)
@@ -50,83 +62,86 @@ OPENPGP4FPR:5143E0D3C00C9DB455BDFD76722389E427362DC5
 {{< /qr >}}
 {{< /details >}}
 
-## S/MIME
+## Personal Certificate
 
-The follwoing personal certificate can be used to send me encrypted
+The follwoing personal X.509 certificate can be used to send me encrypted
 [S/MIME](https://en.wikipedia.org/wiki/S/MIME) mail messages and verify messages
 or documents I have digitally signed with.
 
 The [WISeID Identity Platform](https://wiseid.com/) has verified my name,
-email-address, country and identity in an online process using my national ID
-card. Certificates are then issued by
-[WISeKey’s Certification Authorities](https://www.wisekey.com), which are
+email-address and nationality in an online process using my ID
+card. The certificates has been issued subsequently by the
+[WISeKey Certification Authority](https://www.wisekey.com), which is
 trusted by all web-browsers, mail clients and operating systems.
 
-```text
-Subject Name:
-  C (Country): CH
-  CN (Common Name): Alain Wolf
-  EMAIL (Email Address): alain@alainwolf.ch
-Issuer Name:
-  C (Country): CH
-  O (Organization): WISeKey
-  CN (Common Name): WISeKey CertifyID Personal GB CA 3
+When you open an email message that I signed with it,
+your email app saves the certificate and can then be used to encrypt
+messages to me.
+
+<pre>
+Subject:
+  C (Country): <strong>CH</strong>
+  CN (Common Name): <strong>Alain Wolf</strong>
+  EMAIL (Email Address): <strong>alain@alainwolf.ch</strong>
+Issuer:
+  C (Country): <strong>CH</strong>
+  O (Organization): <strong>WISeKey</strong>
+  CN (Common Name): <strong>WISeKey CertifyID Personal GB CA 3</strong>
 Issued Certificate
   Version: 3
   Serial Number:
-    3E 7A EF 83 BB 80 1C D1 82 39 78 58 C8 39 11 C8 39 2C 67 69
-  Not Valid Before: 2024-12-25
-  Not Valid After: 2026-12-25
-```
+    <strong>3E7A EF83 BB80 1CD1 8239
+    7858 C839 11C8 392C 6769</strong>
+  Not Valid Before: <strong>December 25, 2024</strong>
+  Not Valid After: <strong>December 25, 2026</strong>
+</pre>
 
-Download my certificate:
+Alternatively, you can download the certificate here in PEM text format and
+import it into your mail app or operating system:
 
-- [Certificate only PEM text format (.crt)](/public_keys/c83911c8392c6769.crt)
-- [Certificate only DER binary format (.der)](/public_keys/c83911c8392c6769.der)
-- [Certificate chain PEM text format (.pem)](/public_keys/c83911c8392c6769-chain.pem)
-- [Certificate chain PKCS#7 format (.p7b)](/public_keys/c83911c8392c6769-chain.p7b)
+{{< button href="/public_keys/c83911c8392c6769-chain.pem">}}
+Download Certificate
+{{< /button >}}
 
 You can then import it into your mail app or operating system.
 
 ## SSH Public Key
 
-I use my OpenPGP key to authenticate against
-[SSH](https://en.wikipedia.org/wiki/Secure_Shell) servers too.
+### Export from OpenPGP
 
-If you already have verified and trust my OpenPGP key, you can also safely trust
-my SSH key.
+Since I use my OpenPGP key to authenticate against
+[SSH](https://en.wikipedia.org/wiki/Secure_Shell) servers too, you can safely
+trust my SSH key, if you already have verified and trust my OpenPGP public key.
 
-To allow me to access your systems trough SSH, you can export my OpenPGP key as
-SSH key:
+To export my authentication subkey as OpenSSH key from your keyring:
 
 ```bash
-# My user ID on your system (change as needed)
-$ _SSH_USER=wolf
-
-# Search and add my public key to your keyring
-$ gpg --search-keys 0x722389E427362DC5
-
-# Export my SSH public key from your keyring and install it
-$ gpg --export-ssh-key 0x722389E427362DC5 \
-    | sudo -u $_SSH_USER tee -a \
-        /home/${_SSH_USER}/.ssh/authorized_keys
+$ gpg --export-ssh-key alain@alainwolf
 ```
 
-On Ubuntu Linux systems you can get my public key from either
-[Launchpad](https://launchpad.net/~awolf) or
-[GitHub](https://github.com/alainwolf):
+### From GitHub or Launchpad
+
+As another alternative on Ubuntu Linux systems you can get my public key from
+either [GitHub](https://github.com/alainwolf) or
+[Launchpad](https://launchpad.net/~awolf) using the
+[ssh-import-id](https://manpages.ubuntu.com/manpages/noble/en/man1/ssh-import-id.1.html)
+command:
 
 ```bash
-# Launchpad
-ssh-import-id lp:awolf
-
 # GitHub
-ssh-import-id gh:alainwolf
+$ ssh-import-id gh:alainwolf
+
+# Launchpad
+$ ssh-import-id lp:awolf
 ```
 
-Altenatively you can download my SSH public key:
+### Download from this Website
 
-- [OpenSSH RSA public key format (id_rsa.pub)](/public_keys/id_rsa.pub)
+Altenatively you can download my SSH public key from here:
+
+{{< button href="/public_keys/id_rsa.pub">}}
+Download SSH Public Key
+{{< /button >}}
 
 ## WireGuard VPN
 

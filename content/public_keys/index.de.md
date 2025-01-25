@@ -1,7 +1,7 @@
 ---
 title: "Öffentliche Schlüssel"
 date: 2023-12-03
-lastmod: 2025-01-23
+lastmod: 2025-01-25
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -24,26 +24,35 @@ Quellcode-Änderungen.
 
 Moderne E-Mail-Clients, wie
 [Thunderbird](https://www.thunderbird.net/de/), finden den öffentlichen
-Schlüssel automatisch
-[über meine E-Mail-Adresse](https://keys.openpgp.org/search?q=alain%40alainwolf.ch).
+Schlüssel automatisch über meine E-Mail-Adresse.
 
-```text
-Benutzer ID: Alain Wolf <alain@alainwolf.ch>
-Schlüssel ID: 0x722389E427362DC5
-Fingerabdruck: 5143 E0D3 C00C 9DB4 55BD FD76 7223 89E4 2736 2DC5
-Erstellt: 29. Januar 2022
-Läuft ab: 11. Dezember 2025
-Algorithmus & Größe: RSA 4096 Bit
-```
+{{< alert "triangle-exclamation" >}}
+Lass  Dir vom Besitzer des privaten Schlüssels bestätigen, dass Du tatsächlich
+seinen öffentlichen Schlüssel hast, indem Ihr den
+<strong><font color=secondary-100>Fingerabdruck</font></strong>  miteinander
+vergleicht, idealerweise bei einem persönlichen Treffen.{{< /alert >}}
 
-Meinen OpenPGP Schlüssel herunterladen:
+<pre>
+Benutzer ID: <strong>Alain Wolf &ltalain@alainwolf.ch&gt</strong>
+Schlüssel ID: <strong>7223 89E4 2736 2DC5</strong>
+Fingerabdruck:
+  <strong><font color=secondary-100>5143 E0D3 C00C 9DB4 55BD
+  FD76 7223 89E4 2736 2DC5</font></strong>
+Erstellt: <strong>29. Januar 2022</strong>
+Läuft ab: <strong>11. Dezember 2025</strong>
+Algorithmus & Größe: <strong>RSA 4096 Bit</strong>
+</pre>
 
-- [ASCII Text-Format (.asc)](/public_keys/0x722389E427362DC5.asc)
-- [Binär-Datei (.gpg)](/public_keys/0x722389E427362DC5.gpg)
+Alternativ kannst Du den öffentlichen Schlüssel auch hier herunterladen:
 
-Um sicher zu gehen, dass ein Schlüssel tatsächlich zu einer bestimmten Person
-gehört, sollte der Fingerabdruck überprüft werden. Im Idealfall geschieht dies
-bei einem persönliches Treffen.
+{{< button href="/public_keys/0x722389E427362DC5.asc">}}
+OpenPGP Schlüssel herunterladen
+{{< /button >}}
+
+<br />
+
+Die herutergeladene Datei, im ASCII-geschützten Textformat, muss danach in
+deinen Schlüsselbund importiert werden.
 
 {{< details summary="OpenKeychain" >}}
 Auf Android-Smartphones mit installierter
@@ -55,88 +64,86 @@ OPENPGP4FPR:5143E0D3C00C9DB455BDFD76722389E427362DC5
 {{< /qr >}}
 {{< /details >}}
 
-## S/MIME Zertifikat
+## Persönliches Zertifikat
 
-Mit dem folgenden persönlichen Zertifikat kannst Du mir verschlüsselte
-[S/MIME](https://en.wikipedia.org/wiki/S/MIME) E-Mail-Nachrichten senden und
-Nachrichten oder Dokumente verifizieren, die ich damit digital signiert habe.
+Mit dem folgenden persönlichen X.509 Zertifikat kannst Du mir verschlüsselte
+[S/MIME](https://de.wikipedia.org/wiki/S/MIME) E-Mail-Nachrichten senden, sowie
+Nachrichten oder Dokumente verifizieren, die ich damit signiert habe.
 
-Die [WISeID Identity Platform](https://wiseid.com/) hat meinen Namen, meine
-E-Mail-Adresse, mein Land und meine Identität in einem Online-Prozess anhand
-meines Personalausweises verifiziert. Anschließend werden Zertifikate von
-[WISeKeys Zertifizierungsstellen](https://www.wisekey.com) ausgestellt, die von
-allen Webbrowsern, E-Mail-Clients und Betriebssystemen als vertrauenswürdig
-eingestuft werden.
+Die [WISeID Identity Platform](https://wiseid.com/) hat meinen Namen,
+E-Mail-Adresse und Nationalität, in einem Online-Prozess anhand
+meines Personalausweises verifiziert. Anschliessend wurde das Zertifikat von der
+[WISeKey Zertifizierungsstelle](https://www.wisekey.com) ausgestellt. WISeKey
+wird von allen Webbrowsern, E-Mail-Clients und Betriebssystemen als
+vertrauenswürdig eingestuft.
 
-```text
-Subject Name:
-  C (Country): CH
-  CN (Common Name): Alain Wolf
-  EMAIL (Email Address): alain@alainwolf.ch
-Issuer Name:
-  C (Country): CH
-  O (Organization): WISeKey
-  CN (Common Name): WISeKey CertifyID Personal GB CA 3
-Issued Certificate
+Wenn Du eine E-Mail-Nachricht öffnest, die ich damit signiert habe, speichert
+Deine E-Mail-App das Zertifikat, und es kann danach zur Verschlüsselung von
+Nachrichten an mich verwendet werden.
+
+<pre>
+Betreff:
+  C (Land): <strong>CH</strong>
+  CN (allgemeiner Name): <strong>Alain Wolf</strong>
+  EMAIL (E-Mail-Adresse): <strong>alain@alainwolf.ch</strong>
+Aussteller:
+  C (Land): <strong>CH</strong>
+  O (Organisation): <strong>WISeKey</strong>
+  CN (allgemeiner Name): <strong>WISeKey CertifyID Personal GB CA 3</strong>
+Ausgestelltes Zertifikat
   Version: 3
-  Serial Number:
-    3E 7A EF 83 BB 80 1C D1 82 39 78 58 C8 39 11 C8 39 2C 67 69
-  Not Valid Before: 2024-12-25
-  Not Valid After: 2026-12-25
-```
+  Seriennummer:
+    <strong>3E7A EF83 BB80 1CD1 8239
+    7858 C839 11C8 392C 6769</strong>
+Ungültig vor: <strong>25.12.2024</strong>
+Ungültig nach: <strong>25.12.2026</strong>
+</pre>
 
-Du kannst das Zertifikat herunterladen und in Deine Mail-App oder Betriebssystem
-importieren:
+Alternativ kannst Du das Zertifikat hier im PEM Text-Format herunterladen und in
+Deine Mail-App oder Betriebssystem importieren:
 
-Zertifikat herunterladen:
-
-- [Nur Zertifikat im PEM Text-Format (.crt)](/public_keys/c83911c8392c6769.crt)
-- [Nur Zertifikat als DER Binär-Datei (.der)](/public_keys/c83911c8392c6769.der)
-- [Zertifikatskette im PEM Text-Format (.pem)](/public_keys/c83911c8392c6769-chain.pem)
-- [Zertifikatskette im PKCS#7 Format (.p7b)](/public_keys/c83911c8392c6769-chain.p7b)
+{{< button href="/public_keys/c83911c8392c6769-chain.pem">}}
+Zertifikat herunterladen
+{{< /button >}}
 
 ## SSH Public Key
 
-Auch zur Authentifizierung gegenüber
-[SSH](https://en.wikipedia.org/wiki/Secure_Shell) Servern benutze ich meinen
-OpenPGP-Schlüssel.
+### Aus OpenPGP exportieren
 
-Wenn Du meinen OpenPGP-Schlüssel bereits überprüft hast und ihm vertraust,
-kannst Du somit auch meinem SSH-Schlüssel vertrauen.
+Da ich zur Authentifizierung gegenüber
+[SSH](https://en.wikipedia.org/wiki/Secure_Shell) Servern ebenfalls meinen
+OpenPGP-Schlüssel verwende, kannst Du auch meinem SSH-Schlüssel vertrauen, wenn
+Du meinen OpenPGP-Schlüssel bereits überprüft hast und ihm vertraust.
 
-Um mir per SSH Zugriff auf Deine Systeme zu gewähren, kannst Du meinen
-OpenPGP Key als SSH Key exportieren.
+Um meinen Authentifizierungsunterschlüssel als OpenSSH-Schlüssel aus Deinem
+Schlüsselbund zu exportieren:
 
 ```bash
-# Meine Benutzer-ID auf Deinem System (ändere nach Bedarf)
-$ _SSH_USER=wolf
-
-# Meinen öffentlichen Schlüssel suchen und in Deinen Schlüsselbund
-# aufnehmen
-$ gpg --search-keys 0x722389E427362DC5
-
-# Meinen öffentlichen SSH Schlüsel aus Deinem Schlüsselbund
-# exportieren und installieren
-$ gpg --export-ssh-key 0x722389E427362DC5 \
-    | sudo -u $_SSH_USER tee -a \
-        /home/${_SSH_USER}/.ssh/authorized_keys
+$ gpg --export-ssh-key alain@alainwolf.ch
 ```
 
-Auf Ubuntu-Linux-Systemen kannst Du meinen öffentlichen Schlüssel auch aus
-[Launchpad](https://launchpad.net/~awolf) oder
-[GitHub](https://github.com/alainwolf) importieren:
+### Von GitHub oder Launchpad
+
+Als weitere Alternative auf Ubuntu-Linux-Systemen kannst Du, mit dem Befehl
+[ssh-import-id](https://manpages.ubuntu.com/manpages/noble/en/man1/ssh-import-id.1.html)
+meinen öffentlichen SSH Schlüssel auch von [GitHub](https://github.com/alainwolf)
+oder [Launchpad](https://launchpad.net/~awolf) importieren:
 
 ```bash
 # Launchpad
-ssh-import-id lp:awolf
+$ ssh-import-id lp:awolf
 
 # GitHub
-ssh-import-id gh:alainwolf
+$ ssh-import-id gh:alainwolf
 ```
 
-Alternativ kannst Du meinen öffentlichen SSH-Schlüssel auch hier herunterladen:
+### Download von dieser Website
 
-- [RSA Public-Key im OpenSSH-Format (id_rsa.pub)](/public_keys/id_rsa.pub)
+Du kannst meinen öffentlichen SSH-Schlüssel auch hier herunterladen:
+
+{{< button href="/public_keys/id_rsa.pub">}}
+SSH Schlüsel herunterladen
+{{< /button >}}
 
 ## WireGuard VPN
 
