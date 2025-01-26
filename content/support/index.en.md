@@ -1,45 +1,54 @@
 ---
 title: "Support"
 date: 2023-03-18
-lastmod: 2024-12-23
+lastmod: 2025-01-25
 showPagination: false
 showReadingTime: false
 showDate: false
 showDateUpdated: true
+showTableOfContents: true
 ---
 
-## Remote Desktop
-
+{{< lead >}}
 If you need help on your computer or smartphone, you can allow me to remote
-control your device with the software [RustDesk](https://rustdesk.com/).
+control your device with the [RustDesk](https://rustdesk.com/) remote desktop
+software.
+{{< /lead >}}
 
-### Download
+## Download
 
-Since the download links change with every new version, I'm unable to provide a
-direct download link.
+Since the links change with every new version, I'm unable to provide a direct
+download link.
 
-Go to the
+Go to their
 [GitHub release page](https://github.com/rustdesk/rustdesk/releases/latest) and
 choose the approbriate installation package for your system:
 
-#### For Windows PC
+### For Windows PC
 
 - Architecture: **x86-64 (64-bit)**
 - Windows: **MSI**
 
-#### MacOS Models mit Apple Silicon
+### Apple MacOS
+
+#### Apple Silicon Models
 
 Models with M1, M2, M3 oder M4 CPUs, since approx. 2020/2021.
 
 - Architecture: **AArch64 (ARM64)**
 
-#### MacOS Models with Intel CPUs
+#### Intel Models
 
 Apple models before 2020:
 
 - Architecture: **x86-64 (64-bit)**
 
-### Relay Service
+## Installation
+
+Depending on your operating system you may need to grant permissions.
+
+
+## Relay Service
 
 To establish the connection from my computer to yours via the Internet, a relay
 service is needed.
@@ -48,19 +57,19 @@ At the bottom of the Window a recommendation is shown, to use your own server.
 
 This can be set in the network configuration of the application:
 
-#### Open Settings
+### Open Settings
 
 Click on the hamburger menu in the title-bar of the window:
 
 {{< figure src="rustdesk-setup-step-1.en.png" title="RustDesk Settings: Step 1/8" >}}
 
-#### Open Network Settings
+### Open Network Settings
 
 Click on **Network** on the left side of the window.
 
 {{< figure src="rustdesk-setup-step-2.en.png" title="RustDesk Settings: Step 2/8" >}}
 
-#### Unlock Network Settings
+### Unlock Network Settings
 
 The settings are locked for security reasons.
 
@@ -69,7 +78,7 @@ The settings are locked for security reasons.
 After clicking on the bar, your operating system will ask for your confirmation
 to unlock it.
 
-#### ID/Relay Server Settings
+### ID/Relay Server Settings
 
 Click on **ID/Relay server**:
 
@@ -77,7 +86,7 @@ Click on **ID/Relay server**:
 
 This opens a new dialog window.
 
-#### Copy configuration
+### Copy configuration
 
 Copy the following long string to your clipboard:
 
@@ -90,7 +99,7 @@ All required configuration data is encoded within.
 If you move your mouse over the text field above, a link
 **Copy** will appear that you can click on.
 
-#### Paste configuration
+### Paste configuration
 
 Back in the RustDesk configuration, click on the clipboard symbol in the
 dialog window.
@@ -105,13 +114,13 @@ Your clipboard will be cleared afterwards.
 
 You can then close the dialog window by clicking on **OK**.
 
-#### Close Settings
+### Close Settings
 
 The **Settings** page can now also be closed again:
 
 {{< figure src="rustdesk-setup-step-7.en.png" title="RustDesk Settings: Step 7/8" >}}
 
-### Connection
+## Connection
 
 Back in the main window, a green dot with the status message "Ready" should be
 visible at the bottom, but this time without the note that you should set up
@@ -129,9 +138,11 @@ Before the connection is established, you will be asked, if you want to allow it
 
 ### The ID
 
-**Never disclose your ID, except to people you fully trust!**
+{{< alert "triangle-exclamation" >}}
+Never disclose your RustDesk ID number, except to people you fully trust!
+{{< /alert >}}
 
-You can generate a new random ID at any time in the **Settings** under the
+You can generate a new random ID anytime in the **Settings** under the
 **Security** section.
 
 ### The Software

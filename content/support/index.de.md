@@ -134,9 +134,12 @@ ob Du die Verbindung erlauben willst.
 
 ### Die ID
 
-**Gib Deine ID niemals weiter, ausser an Personen zu denen Du volles Vertrauen hast!**
+{{< alert "triangle-exclamation" >}}
+Gib Deine RustDesk ID-Nummer niemals weiter, ausser an Personen, denen Du voll
+und ganz vertraust!
+{{< /alert >}}
 
-Du kannst Dir in den **Einstellungen** unter der Rubrik **Sicherheit** jederzeit
+In den **Einstellungen** unter der Rubrik **Sicherheit** kannst Du jederzeit
 eine neue zufällige ID erzeugen.
 
 ### Die Software
