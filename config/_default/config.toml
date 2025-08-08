@@ -29,6 +29,9 @@ summaryLength = 0
     { stack-overflow = "https://stackoverflow.com/users/4719048/alain-wolf" },
     { steam = "https://steamcommunity.com/id/gusag64/" },
     { openbroadcast = "https://www.openbroadcast.org/network/users/b8cfebd6-2cfa-4d46-a34f-d16a524147b9/profile/" },
+    { komoot = "https://www.komoot.com/user/alainwolf" },
+    { strava = "https://www.strava.com/athletes/14614629" },
+    { garmin = "https://connect.garmin.com/modern/profile/alainwolf" },
   ]
 
 [languages]
