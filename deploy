@@ -11,6 +11,23 @@ _DIR=/var/www/alainwolf.ch/
 
 set -e -u
 
+# Clearsign the security.txt file if it exists
+if [[ -f ./security.in ]]; then
+    echo "Found security.txt template."
+    echo "Setting expiration date ..."
+    EXP_DATE=$(date -u -d "+1 year" +"%Y-%m-%dT%H:%M:%SZ")
+    sed -i "s/^Expires: .*/Expires: ${EXP_DATE}/" ./security.in
+    echo -n "Clearsigning ..."
+    mkdir -p static/.well-known
+    rm -f static/.well-known/security.txt
+    gpg --clearsign --local-user "${GPGKEY}" \
+        --output ./static/.well-known/security.txt \
+        ./security.in
+    echo " done."
+else
+    echo "No security.in file found, skipping clearsign step."
+fi
+
 # Build
 hugo --minify --gc build
 
