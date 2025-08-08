@@ -65,7 +65,7 @@ summaryLength = 0
   [privacy.instagram]
     disable = true
 
-  [privacy.twitter]
+  [privacy.x]
     disable = true
 
   [privacy.vimeo]

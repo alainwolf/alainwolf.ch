@@ -1,0 +1,31 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:alain@alainwolf.ch
+Contact: https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK
+Expires: 2026-08-31T22:00:00.000Z
+Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/5143E0D3C00C9DB455BDFD76722389E427362DC5
+Encryption: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x5143e0d3c00c9db455bdfd76722389e427362dc5
+Encryption: OpenPGP Key fingerprint = 5143 E0D3 C00C 9DB4 55BD  FD76 7223 89E4 2736 2DC5
+Preferred-Languages: en, de
+Canonical: https://alainwolf.ch/.well-known/security.txt
+Policy: We don't publish any policy.
+Hiring: We don't hire.
+-----BEGIN PGP SIGNATURE-----
+
+iQKTBAEBCgB9FiEE5CBiOeaUzGw7cH1pMLjhi7NmW0wFAmiVoxFfFIAAAAAALgAo
+aXNzdWVyLWZwckBub3RhdGlvbnMub3BlbnBncC5maWZ0aGhvcnNlbWFuLm5ldEU0
+MjA2MjM5RTY5NENDNkMzQjcwN0Q2OTMwQjhFMThCQjM2NjVCNEMACgkQMLjhi7Nm
+W0xJ0A/9FQxLw9LX7HQXCQzNAMLWzptUF+NQVsaxKeRURkXnY/feDWf7GHLI8Srx
+8fnUfwoSmmYKQ84Jp3mMtSTU9CaJn4QR6drFYekh02tEs17pXbo22MDRAmWjJ1rS
+SrLlpCPg2G74I0TpLnCPfn+TllzkNzDTQWFuzx4QexxkoUNDsZUVbNQjws8VfCT3
+USj/N6llQDkfnZw/XstjIL80TYPwVDv8zhtoOGDhO+oGUcZYgnK8nHdUsEQ2a0Df
+QpR1Ki5dzYwv9bbWikvYX2LI4qHacxq7ZEJtj2fq20qaIS3BtLWq50phhjnVUIDe
+U9Ehd2pB70P2TSNuKLnSE0+Pfh99ozHXSOZN03TJ9S0m5t2Y2xFvaHuWZWEl4PIw
+Iof/qsuGVOhoMcYIzIqy3O387d+g++l3U53IwVN4KxgZFAwMtujC5ryhMl9zei8b
+J5QWC7PZs15lrCXeWMZPhm3+fRGhKtAMvSw9Hao7UyiivLxBS7/3xGSpQ6qJi6EA
+2XQVIVgfnCn5HxfIv/YJNHXPeJ4Fdi0w6Q1IV0HxTvdbPfBgw0sLttYB7LpD2Zik
+F33o0/SamB/S6tmflKTloWpl3/1dHRS7Q/sCJNiJZdUwWz4+dRMY2nzkBr9DkXNQ
+jwZAZ7b5aPZBiI79/6iSXcmGoNFzlD/32QJ1Jj//kFSEXaRkpQM=
+=Q0cF
+-----END PGP SIGNATURE-----
