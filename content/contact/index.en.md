@@ -15,6 +15,7 @@ For secure signed and encrypted communication please see my
 To add me to your address book, you can
 [download this vCard file](/Alain_Wolf.en.vcf) or scan the following
 QR code:
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=6 alt="vCard of Alain Wolf" title="vCard of Alain Wolf" >}}
 BEGIN:VCARD
 VERSION:3.0
@@ -36,6 +37,7 @@ URL;TYPE=HOME:https://alainwolf.ch/en/
 REV:2025-01-24T11:36:45Z
 END:VCARD
 {{< /qr >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 {{< /details >}}
 
 - Email: [alain@alainwolf.ch](mailto:alain@alainwolf.ch)
@@ -56,8 +58,10 @@ to your Signal contacts or scan the following QR code with your smartphone:
 
 {{< details summary="Signal QR Code" >}}
 {{< qr level="medium" scale=4 alt="QR code for Signal Messenger" title="AlainWolf.50" >}}
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK
 {{< /qr >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 {{< /details >}}
 
 ### Threema
@@ -67,9 +71,11 @@ add [VX74PUMD](https://threema.id/VX74PUMD) to your Threema contacts or scan the
 following QR code with your smartphone:
 
 {{< details summary="Threema QR-Code" >}}
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=6 alt="QR-Ccode für Threema Messenger" title="VX74PUMD" >}}
 https://threema.id/VX74PUMD
 {{< /qr >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 {{< /details >}}
 
 {{< details summary="Threema Public Key" >}}
@@ -87,12 +93,16 @@ b f 1 6 8 c b b
 
 ## Location
 
-    Schueracherstrasse 16
-    CH - 8306 Bruettisellen
-    Switzerland
+```plaintext
+Schueracherstrasse 16
+CH - 8306 Bruettisellen
+Switzerland
+```
 
 <!-- markdownlint-disable-next-line MD033 -->
-<iframe width="100%" height="500px" frameborder="0" allowfullscreen
+<iframe title="map of my location from OpenStreeMap"
+    width="100%" height="500px" frameborder="0" loading="lazy"
+     allowfullscreen allow.accelerometer allow.geolocation allow.web-share
     src="https://umap.openstreetmap.fr/en/map/alain-wolf_857467?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=none&captionBar=false">
 </iframe>
 
@@ -106,9 +116,11 @@ b f 1 6 8 c b b
 
 {{< details summary="Trip Planner QR Code" >}}
 Scan the following QR code to open the SBB trip planner on your smartphone:
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=4 alt="Swiss Federal Railways trip planner" title="Swiss Federal Railways trip planner">}}
 https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C%22type%22%3A%22ID%22%2C%22value%22%3A%22%22%7D%2C%7B%22value%22%3A%22A%3D2%40O%3D8306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%40H%3D16%40X%3D8631271%40Y%3D47421182%40U%3D103%40L%3D990160359%40B%3D1%40p%3D1737370992%40%22%2C%22type%22%3A%22ID%22%2C%22label%22%3A%228306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%22%7D%5D
 {{< /qr >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 {{< /details >}}
 
 ## File Sharing
@@ -123,7 +135,9 @@ folders with users of other compatible platforms, by simlpy using the persons
 
 #### My Federated Cloud-ID
 
-    wolf@cloud.urown.net
+```plaintext
+wolf@cloud.urown.net
+```
 
 ## Sorry
 

@@ -26,10 +26,11 @@ automatically, [based on my email address](https://keys.openpgp.org/search?q=ala
 
 {{< alert "triangle-exclamation" >}}
 Have the owner of the private key confirm that you actually have his public key
-by comparing your <strong><font color=secondary-100>fingerprints</font></strong>,
+by comparing your <strong><font color=secondary-100>fingerprints</font></strong>, <!-- trunk-ignore(markdownlint/MD033) -->
 ideally during a face-to-face meeting.
 {{< /alert >}}
 
+<!-- trunk-ignore-begin(markdownlint/MD033) -->
 <pre>
 User ID: <strong>Alain Wolf &ltalain@alainwolf.ch&gt</strong>
 Key ID: <strong>7223 89E4 2736 2DC5</strong>
@@ -40,6 +41,7 @@ Created: <strong>January 29, 2022</strong>
 Expires: <strong>December 11, 2025</strong>
 Algorithm & Size: <strong>RSA 4096 bits</strong>
 </pre>
+<!-- trunk-ignore-end(markdownlint/MD033) -->
 
 Alternatively, you can download the public key here:
 
@@ -47,6 +49,7 @@ Alternatively, you can download the public key here:
 Download OpenPGP Key
 {{< /button >}}
 
+<!-- trunk-ignore(markdownlint/MD033) -->
 <br />
 
 The downloaded file, in ASCII armored text format, must then be imported into
@@ -78,6 +81,7 @@ When you open an email message that I signed with it,
 your email app saves the certificate and can then be used to encrypt
 messages to me.
 
+<!-- trunk-ignore-begin(markdownlint/MD033) -->
 <pre>
 Subject:
   C (Country): <strong>CH</strong>
@@ -95,6 +99,7 @@ Issued Certificate
   Not Valid Before: <strong>December 25, 2024</strong>
   Not Valid After: <strong>December 25, 2026</strong>
 </pre>
+<!-- trunk-ignore-end(markdownlint/MD033) -->
 
 Alternatively, you can download the certificate here in PEM text format and
 import it into your mail app or operating system:
@@ -116,7 +121,7 @@ trust my SSH key, if you already have verified and trust my OpenPGP public key.
 To export my authentication subkey as OpenSSH key from your keyring:
 
 ```bash
-$ gpg --export-ssh-key alain@alainwolf
+gpg --export-ssh-key alain@alainwolf
 ```
 
 ### From GitHub or Launchpad

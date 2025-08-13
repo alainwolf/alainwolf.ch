@@ -53,5 +53,9 @@
         ".rmd",
         ".qmd",
         ".mdx"
+    ],
+    "markdown.validate.ignoredLinks": [
+        "/Alain_Wolf.de.vcf",
+        "/Alain_Wolf.en.vcf"
     ]
 }

@@ -16,6 +16,7 @@ Zur sicheren signierten und verschlüsselten Kommunikation können meine
 Um mich zu Deinem Adressbuch hinzuzufügen, kannst Du
 [diese vCard-Datei](/Alain_Wolf.de.vcf) herunterladen oder den
 folgenden QR-Code scannen:
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=6 alt="vCard von Alain Wolf" title="vCard von Alain Wolf" >}}
 BEGIN:VCARD
 VERSION:3.0
@@ -38,6 +39,7 @@ REV:2025-01-24T11:36:45Z
 END:VCARD
 {{< /qr >}}
 {{< /details >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 
 - E-Mail: [alain@alainwolf.ch](mailto:alain@alainwolf.ch)
 - Home: [+41 32 510 47 30](tel:+41325104730)
@@ -55,11 +57,13 @@ Um mit mir über [Signal](https://signal.org/de/) in Kontakt zu treten, kannst D
 zu Deinen Signal-Kontakten hinzufügen oder den folgenden QR-Code mit Deinem
 Smartphone einscannen:
 
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< details summary="Signal QR-Code" >}}
 {{< qr level="medium" scale=4 alt="QR-Ccode für Signal Messenger" title="AlainWolf.50" >}}
 https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK
 {{< /qr >}}
 {{< /details >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 
 ### Threema
 
@@ -69,9 +73,11 @@ Threema-Kontakten hinzufügen oder den folgenden QR-Code mit Deinem Smartphone
 einscannen:
 
 {{< details summary="Threema QR-Code" >}}
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=6 alt="QR-Ccode für Threema Messenger" title="VX74PUMD" >}}
 https://threema.id/VX74PUMD
 {{< /qr >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 {{< /details >}}
 
 {{< details summary="Threema Public Key" >}}
@@ -89,12 +95,16 @@ b f 1 6 8 c b b
 
 ## Adresse
 
-    Schüracherstrasse 16
-    CH - 8306 Brüttisellen
-    Schweiz
+```plaintext
+Schüracherstrasse 16
+CH - 8306 Brüttisellen
+Schweiz
+```
 
 <!-- markdownlint-disable-next-line MD033 -->
-<iframe width="100%" height="500px" frameborder="0" allowfullscreen
+<iframe title="Karte meines Standortes von OpenStreeMap"
+    width="100%" height="500px" frameborder="0" loading="lazy"
+     allowfullscreen allow.accelerometer allow.geolocation allow.web-share
     src="https://umap.openstreetmap.fr/de/map/alain-wolf_857467?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=none&captionBar=false">
 </iframe>
 
@@ -108,10 +118,12 @@ b f 1 6 8 c b b
 
 {{< details summary="Reiseplaner QR Code" >}}
 Scanne den folgenden QR-Code, um den SBB Reiseplaner auf Deinem Smartphone zu öffnen:
+<!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=4 alt="SBB Reiseplaner" title="SBB Reiseplaner">}}
 https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C%22type%22%3A%22ID%22%2C%22value%22%3A%22%22%7D%2C%7B%22value%22%3A%22A%3D2%40O%3D8306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%40H%3D16%40X%3D8631271%40Y%3D47421182%40U%3D103%40L%3D990160359%40B%3D1%40p%3D1737370992%40%22%2C%22type%22%3A%22ID%22%2C%22label%22%3A%228306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%22%7D%5D
 {{< /qr >}}
 {{< /details >}}
+<!-- trunk-ignore-end(markdownlint/MD034) -->
 
 ## File Sharing
 
@@ -122,7 +134,9 @@ anderen kompatiblen Plattformen zu teilen, wie zum Beispiel [Nextcloud](https://
 
 #### Meine Federated Cloud-ID
 
-    wolf@cloud.urown.net
+```plaintext
+wolf@cloud.urown.net
+```
 
 ### Sorry
 
