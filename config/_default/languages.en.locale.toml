@@ -1,0 +1,14 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/configuration/#language-and-i18n
+
+languageCode = "en"
+languageName = 'English'
+languageDirection = 'ltr'
+weight = 1
+copyright = "© 2026 Alain Wolf - All rights reserved"
+title = "Alain Wolf"
+
+[params]
+    dateFormat = "January 2, 2006"
+    description = "Personal Website vof Alain Wolf, Zurich, Switzerland"

@@ -16,18 +16,21 @@ robots = "notranslate"
 
 [author]
   name = "Alain Wolf"
-  # image = "img/author.png"
-  # headline = "Don't panic!"
-  # links = [
-  #   { email = "mailto:alain@alainwolf.ch" },
-  #   { signal-messenger = "https://signal.me/#p/+41788978776" },
-  #   { github = "https://github.com/alainwolf" },
-  #   { keybase = "https://keybase.io/alainwolf" },
-  #   { soundcloud = "https://soundcloud.com/alainwolf" },
-  #   { stack-overflow = "https://stackoverflow.com/users/4719048/alain-wolf" },
-  #   { steam = "https://steamcommunity.com/id/gusag64/" },
-  #   { openbroadcast = "https://www.openbroadcast.org/network/users/b8cfebd6-2cfa-4d46-a34f-d16a524147b9/profile/" },
-  # ]
+  image = "img/author.png"
+  headline = "Don't panic!"
+  links = [
+    { email = "mailto:alain@alainwolf.ch" },
+    { signal-messenger = "https://signal.me/#eu/mEXHzaYIpE4Ilr4n6w7z7WhP0CoWGs4_ceiSrTNzCri7czEG1WZDpbwCS4s1DYgK" },
+    { github = "https://github.com/alainwolf" },
+    { keybase = "https://keybase.io/alainwolf" },
+    { soundcloud = "https://soundcloud.com/alainwolf" },
+    { stack-overflow = "https://stackoverflow.com/users/4719048/alain-wolf" },
+    { steam = "https://steamcommunity.com/id/gusag64/" },
+    { openbroadcast = "https://www.openbroadcast.org/network/users/b8cfebd6-2cfa-4d46-a34f-d16a524147b9/profile/" },
+    { komoot = "https://www.komoot.com/user/alainwolf" },
+    { strava = "https://www.strava.com/athletes/14614629" },
+    { garmin = "https://connect.garmin.com/modern/profile/alainwolf" },
+  ]
 
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
@@ -79,8 +82,8 @@ robots = "notranslate"
   showTermCount = true
 
 [fathomAnalytics]
-  # site = "ABC12345"
-  # domain = "llama.yoursite.com"
+  # site = "Alain Wolf"
+  # domain = "alainwolf.ch"
 
 [verification]
   # google = ""
