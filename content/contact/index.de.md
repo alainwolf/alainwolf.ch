@@ -126,7 +126,7 @@ wolf@cloud.urown.net
 
 ### Sorry
 
-Du findest mich nicht finden auf ...
+Du findest mich nicht auf ...
 
 Discord,
 Disqus,
@@ -143,6 +143,7 @@ QQ,
 Reddit,
 Skype,
 Snapchat,
+Spotify,
 Telegram,
 Threads,
 TikTok,
