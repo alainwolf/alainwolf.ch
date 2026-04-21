@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2024-01-15
-lastmod: 2025-01-24
+lastmod: 2026-04-21
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -29,12 +29,11 @@ EMAIL;TYPE=OTHER:wolf@mailbox.org
 EMAIL;TYPE=OTHER:alainw@protonmail.ch
 EMAIL;TYPE=OTHER:wolf@restkultur.ch
 TEL;TYPE=PREF;TYPE=CELL:+41 78 897 87 76
-TEL;TYPE=HOME:+41 32 510 47 30
-TEL;TYPE=WORK:+41 44 589 68 51
+TEL;TYPE=HOME:+41 44 589 68 51
 ADR;TYPE=HOME:;;Schueracherstrasse 16;Bruettisellen;;8306;Switzerland
 IMPP:sgnl:41788978776
 URL;TYPE=HOME:https://alainwolf.ch/en/
-REV:2025-01-24T11:36:45Z
+REV:2026-04-21T06:03:40Z
 END:VCARD
 {{< /qr >}}
 <!-- trunk-ignore-end(markdownlint/MD034) -->
@@ -42,7 +41,7 @@ END:VCARD
 
 - Email: [alain@alainwolf.ch](mailto:alain@alainwolf.ch)
 - Mobile: [+41 78 897 87 76](tel:+41788978776)
-- Home: [+41 32 510 47 30](tel:+41325104730)
+- Home: [+41 44 589 68 51](tel:+41325104730)
 
 
 ## Instant Messaging
@@ -76,19 +75,6 @@ following QR code with your smartphone:
 https://threema.id/VX74PUMD
 {{< /qr >}}
 <!-- trunk-ignore-end(markdownlint/MD034) -->
-{{< /details >}}
-
-{{< details summary="Threema Public Key" >}}
-```text
-f 9 4 c 6 0 8 c
-9 7 2 8 1 a 7 9
-a 3 a a c 7 4 4
-b f 1 6 8 c b b
-4 d 6 0 9 3 9 6
-7 7 5 3 b 1 f 2
-1 7 6 b 1 4 0 f
-0 5 4 7 f 8 7 3
-```
 {{< /details >}}
 
 ## Location

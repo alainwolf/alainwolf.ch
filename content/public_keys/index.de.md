@@ -1,7 +1,7 @@
 ---
 title: "Öffentliche Schlüssel"
 date: 2023-12-03
-lastmod: 2025-01-25
+lastmod: 2025-12-19
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -39,7 +39,7 @@ Fingerabdruck:
   <strong><font color=secondary-100>5143 E0D3 C00C 9DB4 55BD
   FD76 7223 89E4 2736 2DC5</font></strong>
 Erstellt: <strong>29. Januar 2022</strong>
-Läuft ab: <strong>11. Dezember 2025</strong>
+Läuft ab: <strong>12. Dezember 2026</strong>
 Algorithmus & Größe: <strong>RSA 4096 Bit</strong>
 </pre>
 

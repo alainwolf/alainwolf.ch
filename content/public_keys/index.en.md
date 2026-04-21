@@ -1,7 +1,7 @@
 ---
 title: "Public Keys"
 date: 2023-12-03
-lastmod: 2025-01-25
+lastmod: 2025-12-19
 showPagination: false
 showReadingTime: false
 showDate: false
@@ -38,7 +38,7 @@ Fingerprint:
   <strong><font color=secondary-100>5143 E0D3 C00C 9DB4 55BD
   FD76 7223 89E4 2736 2DC5</font></strong>
 Created: <strong>January 29, 2022</strong>
-Expires: <strong>December 11, 2025</strong>
+Expires: <strong>December 12, 2026</strong>
 Algorithm & Size: <strong>RSA 4096 bits</strong>
 </pre>
 <!-- trunk-ignore-end(markdownlint/MD033) -->
