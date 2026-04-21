@@ -98,10 +98,10 @@ Switzerland
 
 ### Public Transport
 
-#### [Swiss Railways Trip Planner](https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C%22type%22%3A%22ID%22%2C%22value%22%3A%22%22%7D%2C%7B%22value%22%3A%22A%3D2%40O%3D8306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%40H%3D16%40X%3D8631271%40Y%3D47421182%40U%3D103%40L%3D990160359%40B%3D1%40p%3D1737370992%40%22%2C%22type%22%3A%22ID%22%2C%22label%22%3A%228306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%22%7D%5D "SBB Trip Planner")
+#### [Swiss Railways Trip Planner](https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C%22type%22%3A%22ID%22%2C%22value%22%3A%22%22%7D%2C%7B%22value%22%3A%22A%3D2%40O%3D8306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%40H%3D16%40X%3D8631271%40Y%3D47421182%40U%3D103%40L%3D990160359%40B%3D1%40p%3D1737370992%40%22%2C%22type%22%3A%22ID%22%2C%22label%22%3A%228306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%22%7D%5D "Swiss Railways Trip Planner")
 
 {{< details summary="Trip Planner QR Code" >}}
-Scan the following QR code to open the SBB trip planner on your smartphone:
+Scan the following QR code to open the Swiss Railways trip planner on your smartphone:
 <!-- trunk-ignore-begin(markdownlint/MD034) -->
 {{< qr level="medium" scale=4 alt="Swiss Federal Railways trip planner" title="Swiss Federal Railways trip planner">}}
 https://www.sbb.ch/en?moment=%22DEPARTURE%22&stops=%5B%7B%22label%22%3A%22%22%2C%22type%22%3A%22ID%22%2C%22value%22%3A%22%22%7D%2C%7B%22value%22%3A%22A%3D2%40O%3D8306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%40H%3D16%40X%3D8631271%40Y%3D47421182%40U%3D103%40L%3D990160359%40B%3D1%40p%3D1737370992%40%22%2C%22type%22%3A%22ID%22%2C%22label%22%3A%228306%20Br%C3%BCttisellen%2C%20Sch%C3%BCracherstrasse%2016%22%7D%5D
